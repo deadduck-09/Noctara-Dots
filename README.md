@@ -56,7 +56,7 @@ If something isn't exactly how you like it, changing it is easy. The configurati
 
 # 🖼 Showcase
 
-<details open>
+<details>
 <summary>🌙 Desktop</summary>
 
 ![](assets/desktop-cc.png)
