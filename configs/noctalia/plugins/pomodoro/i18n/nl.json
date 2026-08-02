@@ -1,0 +1,38 @@
+{
+  "panel": {
+    "long-break": "Lange pauze",
+    "pause": "Pauze",
+    "reset": "Resetten",
+    "reset-all": "Alles resetten",
+    "resume": "Hervatten",
+    "session": "Sessie",
+    "settings": "Widgetinstellingen",
+    "short-break": "Korte pauze",
+    "skip": "Overslaan",
+    "start": "Starten",
+    "title": "Pomodoro",
+    "work": "Werk"
+  },
+  "settings": {
+    "auto-start-breaks": "Automatisch opstarten mislukt",
+    "auto-start-breaks-desc": "Start automatisch een pauzetimer na een werksessie",
+    "auto-start-work": "Automatisch starten Werk",
+    "auto-start-work-desc": "Start de werktimer automatisch na een pauze",
+    "compact-mode": "Compacte modus",
+    "compact-mode-desc": "Een kortere en meer minimalistische uitstraling voor de widget",
+    "long-break-duration": "Duur lange pauze",
+    "long-break-duration-desc": "Duur van lange pauzes in minuten",
+    "sessions-before-long-break": "Sessies voor lange pauze",
+    "sessions-before-long-break-desc": "Aantal werksessies voor een lange pauze",
+    "short-break-duration": "Korte pauzeduur",
+    "short-break-duration-desc": "Duur van korte pauzes in minuten",
+    "work-duration": "Werkduur",
+    "work-duration-desc": "Duur van elke werksessie in minuten"
+  },
+  "toast": {
+    "break-finished": "Pauze voorbij! Klaar om te focussen?",
+    "long-break-finished": "Lange pauze voorbij! Klaar voor een nieuwe cyclus?",
+    "title": "Pomodoro",
+    "work-finished": "Werksessie voltooid! Tijd voor een pauze."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "panel": {
+    "long-break": "Uzun Ara",
+    "pause": "Duraklat",
+    "reset": "Sıfırla",
+    "reset-all": "Tümünü Sıfırla",
+    "resume": "Devam Et",
+    "session": "Oturum",
+    "settings": "Widget Ayarları",
+    "short-break": "Kısa Mola",
+    "skip": "Atla",
+    "start": "Başlat",
+    "title": "Pomodoro",
+    "work": "İş"
+  },
+  "settings": {
+    "auto-start-breaks": "Otomatik Başlangıç Arızaları",
+    "auto-start-breaks-desc": "Çalışma oturumundan sonra mola zamanlayıcısını otomatik olarak başlat",
+    "auto-start-work": "Otomatik İşe Başla",
+    "auto-start-work-desc": "Aradan sonra otomatik olarak iş zamanlayıcısını başlat",
+    "compact-mode": "Kompakt Modu",
+    "compact-mode-desc": "Widget için daha kısa ve minimal bir görünüm",
+    "long-break-duration": "Uzun Ara Süresi",
+    "long-break-duration-desc": "Uzun molaların süresi (dakika)",
+    "sessions-before-long-break": "Uzun Aradan Önceki Oturumlar",
+    "sessions-before-long-break-desc": "Uzun moladan önce yapılacak çalışma oturumu sayısı",
+    "short-break-duration": "Kısa Mola Süresi",
+    "short-break-duration-desc": "Kısa molaların süresi (dakika)",
+    "work-duration": "Çalışma Süresi",
+    "work-duration-desc": "Her bir çalışma oturumunun süresi (dakika)"
+  },
+  "toast": {
+    "break-finished": "Mola bitti! Odaklanmaya hazır mısın?",
+    "long-break-finished": "Uzun ara bitti! Yeni bir döngüye hazır mısın?",
+    "title": "Pomodoro",
+    "work-finished": "Çalışma oturumu tamamlandı! Mola zamanı."
+  }
+}

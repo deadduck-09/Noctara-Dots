@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" width="64" height="64" version="1.1" viewBox="0 0 16.933 16.933" id="svg7" sodipodi:docname="grub-customizer.svg" inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)">
+  <sodipodi:namedview id="namedview7" pagecolor="#a9abb3" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="4.3531261" inkscape:cx="36.066035" inkscape:cy="26.417797" inkscape:window-width="2560" inkscape:window-height="1376" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg7" showgrid="false"/>
+  <defs id="defs2">
+    <style id="current-color-scheme" type="text/css">.ColorScheme-Text {color:#d8dee9} .ColorScheme-Highlight {color:#3b4252}</style>
+  </defs>
+  <metadata id="metadata2">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path id="path24-7" style="fill:currentColor;" class="ColorScheme-Text" inkscape:label="path24" d="M 32.306387 22.000049 L 29.673561 22.394646 L 29.673561 23.203237 A 6.99 6.99 0 0 0 27.570581 23.964549 L 26.921641 23.191114 L 24.915881 24.896186 L 25.552669 25.656286 A 6.99 6.99 0 0 0 24.917704 26.576406 C 24.725936 26.908744 24.574874 27.251814 24.443151 27.599571 L 23.43936 27.421972 L 23.000049 30.015645 L 23.994118 30.191426 C 24.008278 30.939467 24.139081 31.677768 24.384819 32.380804 L 23.492223 32.898448 L 24.822307 35.169655 L 25.705182 34.659891 C 26.181706 35.209309 26.749462 35.694352 27.406523 36.086138 L 27.052887 37.06263 L 29.5332 37.94517 L 29.882583 36.984438 C 30.624033 37.103385 31.372837 37.107346 32.101618 36.990499 L 32.455254 37.96093 L 34.924023 37.046871 L 34.576463 36.091594 C 35.208615 35.716207 35.785392 35.238298 36.28145 34.664134 L 37.174047 35.177534 L 38.476788 32.890568 L 37.597559 32.382622 C 37.846038 31.666533 37.97099 30.927938 37.980361 30.193244 L 38.999951 30.013827 L 38.525398 27.42379 L 37.523429 27.599571 C 37.260937 26.908706 36.883478 26.261398 36.410266 25.677501 L 37.078042 24.882851 L 35.048585 23.203237 L 34.400252 23.976671 A 6.98 6.98 0 0 0 32.306387 23.208692 L 32.306387 22.000049 z M 30.984202 24.080321 A 6 6 0 0 1 36.984469 30.079896 A 6 6 0 0 1 30.984202 36.080077 A 6 6 0 0 1 24.984542 30.079896 A 6 6 0 0 1 30.984202 24.080321 z M 31.225428 25.08712 A 4.976 4.976 0 0 0 30.632389 25.093788 A 4.989 4.989 0 0 0 26.650642 27.575931 A 5.013 5.013 0 0 0 28.486875 34.410161 A 5.002 5.002 0 0 0 35.316546 32.583861 A 5.01 5.01 0 0 0 33.48092 25.752056 A 4.976 4.976 0 0 0 31.225428 25.08712 z M 30.984809 26.079978 A 4 4 0 0 1 34.984785 30.079896 A 4 4 0 0 1 30.984809 34.079815 A 4 4 0 0 1 26.984834 30.079896 A 4 4 0 0 1 30.984809 26.079978 z " transform="matrix(0.85045336,0,0,0.85253252,-17.897554,-17.092842)"/>
+</svg>

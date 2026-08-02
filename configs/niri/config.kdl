@@ -1,0 +1,98 @@
+
+//    ███╗   ██╗ ██████╗  ██████╗████████╗ █████╗ ██████╗  █████╗       ██████╗  ██████╗ ████████╗███████╗
+//    ████╗  ██║██╔═══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗      ██╔══██╗██╔═══██╗╚══██╔══╝██╔════╝
+//    ██╔██╗ ██║██║   ██║██║        ██║   ███████║██████╔╝███████║█████╗██║  ██║██║   ██║   ██║   ███████╗
+//    ██║╚██╗██║██║   ██║██║        ██║   ██╔══██║██╔══██╗██╔══██║╚════╝██║  ██║██║   ██║   ██║   ╚════██║
+//    ██║ ╚████║╚██████╔╝╚██████╗   ██║   ██║  ██║██║  ██║██║  ██║      ██████╔╝╚██████╔╝   ██║   ███████║
+//    ╚═╝  ╚═══╝ ╚═════╝  ╚═════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝      ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝
+//                                                                                                           
+
+// "/-" comments out the following node. 
+// This is mostly made by keeping noctalia-shell in mind.
+
+//===================\\
+//      MODULES      \\
+//===================\\
+
+// Core (Its recommended to check these files to make changes according to your hardware)
+include "./modules/input.kdl"      // Mouse and input devices
+include "./modules/monitors.kdl"  // Monitors and output devices
+include "./modules/env.kdl"      // Environment variables
+
+// Startup
+include "./modules/autostarts.kdl"
+
+// Appearance
+include "./modules/animations.kdl"
+include "./modules/decorations.kdl"  // Blur behavior
+include "./modules/layer-rules.kdl" // Shell rules 
+
+// Behavior
+include "./modules/keybinds.kdl"       // Change them to your default apps 
+include "./modules/window-rules.kdl"  // Windows behavior
+
+// ========================================================================================\\
+
+
+//    ██╗      █████╗ ██╗   ██╗ ██████╗ ██╗   ██╗████████╗███████╗
+//    ██║     ██╔══██╗╚██╗ ██╔╝██╔═══██╗██║   ██║╚══██╔══╝██╔════╝
+//    ██║     ███████║ ╚████╔╝ ██║   ██║██║   ██║   ██║   ███████╗
+//    ██║     ██╔══██║  ╚██╔╝  ██║   ██║██║   ██║   ██║   ╚════██║
+//    ███████╗██║  ██║   ██║   ╚██████╔╝╚██████╔╝   ██║   ███████║
+//    ╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝
+//                                                                
+
+// NOTE:
+// Keep the layout section in this file.
+// Moving it into a module currently causes border rendering/theme issues.
+// If you are not using "noctalia-shell" consider making it modular too.
+
+layout {
+  gaps 7 // Set gaps around windows in logical pixels.
+  center-focused-column "never"
+  always-center-single-column
+  preset-column-widths {
+    proportion 0.5
+    proportion 0.66667
+    proportion 1.0
+  }
+
+  default-column-width { proportion 0.5; }
+
+  focus-ring {
+    off // Comment this line to enable focus ring.
+    width 4
+    active-color "#7fc8ff"
+    inactive-color "#505050"
+  }
+
+  border {
+    // settings are same as focus ring
+    // if borders are enabled, consider disabling the focus ring.
+    //off 
+    width 2
+    active-color "#ffc87f"
+    inactive-color "#505050"
+    urgent-color "#9b0000"  //windows that require attention.
+  }
+
+  shadow {
+    on // Comment the line to disable shadows
+    softness 30
+    spread 5
+    offset x=0 y=5
+    color "#0007"
+  }
+
+  // Struts shrink the area occupied by windows, similarly to layer-shell panels.
+  struts {
+    // left 64
+    // right 64
+    // top 64
+    // bottom 64 
+  }
+}
+
+
+include "./noctalia.kdl"
+

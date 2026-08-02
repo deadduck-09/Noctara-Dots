@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" width="64" height="64" version="1.1" viewBox="0 0 16.933 16.933" id="svg7" sodipodi:docname="preferences-desktop-theme-global.svg" inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)">
+  <sodipodi:namedview id="namedview7" pagecolor="#9c4444" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="6.15625" inkscape:cx="15.756345" inkscape:cy="29.64467" inkscape:window-width="1226" inkscape:window-height="669" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="0" inkscape:current-layer="svg7" showgrid="false"/>
+  <defs id="defs2">
+    <style id="current-color-scheme" type="text/css">.ColorScheme-Text {color:#d8dee9} .ColorScheme-Highlight {color:#3b4252}</style>
+  </defs>
+  <metadata id="metadata2">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path d="m 3.5402478,3.1749341 v 0.00268 2.1165941 2.1165945 2.1165953 0.701088 1.41551 0.349211 0.351874 A 1.3146599,1.4128406 0 0 0 4.852428,13.755266 H 4.50764 l 0.022319,0.0028 h 0.9847539 1.9695088 1.9695086 1.9695157 1.969506 V 11.641427 H 11.423246 9.4537356 8.2035688 L 9.2875424,10.969656 10.99164,9.9113033 12.698217,8.853006 11.713463,7.0216447 10.006884,8.0799419 8.3027888,9.1382401 7.2237745,9.8073394 7.846379,8.6477438 8.8311325,6.816383 9.8158872,4.9823558 8.104349,3.9213938 7.1195945,5.7554205 6.1348396,7.586781 5.509757,8.7517079 V 7.4081733 5.2915789 3.1749836 Z M 4.852428,11.638648 c 0.1736335,0 0.3398281,0.07463 0.4638514,0.205263 0.1240245,0.130618 0.1909967,0.311887 0.1909967,0.49849 0,0.186603 -0.069454,0.365206 -0.1909967,0.498494 -0.1215456,0.133282 -0.2902179,0.205261 -0.4638514,0.205261 -0.1736337,0 -0.3398278,-0.07465 -0.4638525,-0.205261 -0.1240245,-0.130619 -0.1909969,-0.311891 -0.1909969,-0.498494 0,-0.186603 0.069455,-0.365203 0.1909969,-0.49849 0.1215444,-0.133281 0.2902188,-0.205263 0.4638525,-0.205263 z" id="path2-3" style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.334062;stroke-dasharray:none;stroke-opacity:0.3" class="ColorScheme-Text"/>
+</svg>

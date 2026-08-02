@@ -1,0 +1,38 @@
+{
+  "panel": {
+    "long-break": "Demek dirêj",
+    "pause": "Rawestîne",
+    "reset": "Ji nû ve saz bike",
+    "reset-all": "Hemûyan Vejîne",
+    "resume": "Berdewam bike",
+    "session": "Rûniştin",
+    "settings": "Mîhengên Wîcêtan",
+    "short-break": "Demek kurt",
+    "skip": "Derbas bike",
+    "start": "Destpêk",
+    "title": "Pomodoro",
+    "work": "Xebat"
+  },
+  "settings": {
+    "auto-start-breaks": "Şikestên Destpêk-Xweber",
+    "auto-start-breaks-desc": "Piştî danişîna xebatê, demjimêra bêhnvedanê bixweber dest pê bike",
+    "auto-start-work": "Xebata Xweser Destpê Bike",
+    "auto-start-work-desc": "Piştî bêhnvedanê bixweber demjimêra kar dest pê bike",
+    "compact-mode": "Rewşa Kompakt",
+    "compact-mode-desc": "Dîmeneke kurtir û mînîmaltir ji bo wîcgetê",
+    "long-break-duration": "Demdirêjiya Navbereke Dirêj",
+    "long-break-duration-desc": "Demê dirêjkirina navberên dirêj bi deqîqeyan",
+    "sessions-before-long-break": "Rûniştinên Berî Navbereke Dirêj",
+    "sessions-before-long-break-desc": "Hejmara danişînên kar berî navbereke dirêj",
+    "short-break-duration": "Demê Kurt ê Kurt",
+    "short-break-duration-desc": "Demê kurtkirinê di deqîqeyan de",
+    "work-duration": "Demê Karî",
+    "work-duration-desc": "Demjimê dema her rûniştina xebatê bi deqîqeyan"
+  },
+  "toast": {
+    "break-finished": "Dem hat bûn! Amade yî balê bikşînî?",
+    "long-break-finished": "Demek dirêj xelas bû! Ma tu ji bo çerxeke nû amade yî?",
+    "title": "Pomodoro",
+    "work-finished": "Xebata kar temam bû! Dem dema bêhnvedanê ye."
+  }
+}

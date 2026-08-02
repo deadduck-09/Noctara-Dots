@@ -1,0 +1,38 @@
+{
+  "panel": {
+    "long-break": "長めの休憩",
+    "pause": "一時停止",
+    "reset": "リセット",
+    "reset-all": "すべてリセット",
+    "resume": "再開",
+    "session": "セッション",
+    "settings": "ウィジェット設定",
+    "short-break": "短い休憩",
+    "skip": "スキップ",
+    "start": "開始",
+    "title": "ポモドーロ",
+    "work": "作業"
+  },
+  "settings": {
+    "auto-start-breaks": "自動起動の破損",
+    "auto-start-breaks-desc": "作業セッション後に休憩タイマーを自動的に開始",
+    "auto-start-work": "起動時にワークスペースを復元",
+    "auto-start-work-desc": "休憩後、作業タイマーを自動的に開始",
+    "compact-mode": "コンパクトモード",
+    "compact-mode-desc": "ウィジェットをより短く、よりミニマルな外観に",
+    "long-break-duration": "長めの休憩時間",
+    "long-break-duration-desc": "長休憩の時間 (分)",
+    "sessions-before-long-break": "長時間の休憩前のセッション",
+    "sessions-before-long-break-desc": "長い休憩を取るまでの作業セッション数",
+    "short-break-duration": "短い休憩時間",
+    "short-break-duration-desc": "短い休憩時間（分）",
+    "work-duration": "作業時間",
+    "work-duration-desc": "各作業セッションの時間（分）"
+  },
+  "toast": {
+    "break-finished": "休憩終わり！集中する準備はできた？",
+    "long-break-finished": "長い休憩は終わり！新しいサイクルを始める準備はいい？",
+    "title": "ポモドーロ",
+    "work-finished": "お仕事お疲れ様でした！休憩しましょう。"
+  }
+}

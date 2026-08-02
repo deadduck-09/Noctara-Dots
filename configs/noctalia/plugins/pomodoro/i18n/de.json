@@ -1,0 +1,38 @@
+{
+  "panel": {
+    "long-break": "Lange Pause",
+    "pause": "Pause",
+    "reset": "Zurücksetzen",
+    "reset-all": "Alles zurücksetzen",
+    "resume": "Fortsetzen",
+    "session": "Sitzung",
+    "settings": "Widget-Einstellungen",
+    "short-break": "Kurze Pause",
+    "skip": "Überspringen",
+    "start": "Starten",
+    "title": "Pomodoro",
+    "work": "Arbeit"
+  },
+  "settings": {
+    "auto-start-breaks": "Autostart-Fehler",
+    "auto-start-breaks-desc": "Pausentimer nach Arbeitssitzung automatisch starten",
+    "auto-start-work": "Automatischer Arbeitsbeginn",
+    "auto-start-work-desc": "Automatisch Arbeitszeit nach Pause starten",
+    "compact-mode": "Kompaktmodus",
+    "compact-mode-desc": "Ein kürzeres und minimalistischeres Aussehen für das Widget",
+    "long-break-duration": "Dauer der langen Pause",
+    "long-break-duration-desc": "Dauer langer Pausen in Minuten",
+    "sessions-before-long-break": "Sitzungen vor langer Pause",
+    "sessions-before-long-break-desc": "Anzahl der Arbeitssitzungen vor einer langen Pause",
+    "short-break-duration": "Kurze Pausenlänge",
+    "short-break-duration-desc": "Dauer der kurzen Pausen in Minuten",
+    "work-duration": "Arbeitsdauer",
+    "work-duration-desc": "Dauer jeder Arbeitssitzung in Minuten"
+  },
+  "toast": {
+    "break-finished": "Pause vorbei! Bereit, dich zu konzentrieren?",
+    "long-break-finished": "Die lange Pause ist vorbei! Bereit für einen neuen Zyklus?",
+    "title": "Pomodoro",
+    "work-finished": "Arbeitssitzung abgeschlossen! Zeit für eine Pause."
+  }
+}

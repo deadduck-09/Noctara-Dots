@@ -1,0 +1,38 @@
+{
+  "panel": {
+    "long-break": "Hosszú szünet",
+    "pause": "Szünet",
+    "reset": "Visszaállítás",
+    "reset-all": "Összes beállítás visszaállítása",
+    "resume": "Folytatás",
+    "session": "Munkamenet",
+    "settings": "Widget beállítások",
+    "short-break": "Rövid szünet",
+    "skip": "Ugrás",
+    "start": "Indítás",
+    "title": "Pomodoro",
+    "work": "Munka"
+  },
+  "settings": {
+    "auto-start-breaks": "Automatikus indítási hibák",
+    "auto-start-breaks-desc": "Automatikus szünetidőzítő indítása a munkamenet után",
+    "auto-start-work": "Automatikus munkafolyamat indítás",
+    "auto-start-work-desc": "Munkaidő-időzítő automatikus indítása szünet után",
+    "compact-mode": "Kompakt mód",
+    "compact-mode-desc": "Rövidebb és minimalista megjelenés a widgethez",
+    "long-break-duration": "Hosszú szünet időtartama",
+    "long-break-duration-desc": "Hosszú szünetek időtartama percben",
+    "sessions-before-long-break": "Hosszú szünet előtti munkamenetek",
+    "sessions-before-long-break-desc": "Hány munkamenet után legyen egy hosszabb szünet",
+    "short-break-duration": "Rövid szünet időtartama",
+    "short-break-duration-desc": "Rövid szünetek időtartama percben",
+    "work-duration": "Munkaidő",
+    "work-duration-desc": "Minden munkamenet időtartama percben"
+  },
+  "toast": {
+    "break-finished": "Szünet vége! Készen állsz a koncentrálásra?",
+    "long-break-finished": "Hosszú szünet vége! Készen állsz egy új ciklusra?",
+    "title": "Pomodoro",
+    "work-finished": "A munkamenet véget ért! Ideje szünetet tartani."
+  }
+}

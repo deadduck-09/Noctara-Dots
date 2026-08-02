@@ -1,0 +1,38 @@
+{
+  "panel": {
+    "long-break": "Długa przerwa",
+    "pause": "Wstrzymaj",
+    "reset": "Resetuj",
+    "reset-all": "Zresetuj wszystko",
+    "resume": "Wznów",
+    "session": "Sesja",
+    "settings": "Ustawienia widżetu",
+    "short-break": "Krótka przerwa",
+    "skip": "Pomiń",
+    "start": "Uruchom",
+    "title": "Pomodoro",
+    "work": "Praca"
+  },
+  "settings": {
+    "auto-start-breaks": "Autostart przestaje działać",
+    "auto-start-breaks-desc": "Automatycznie uruchamiaj minutnik przerwy po sesji pracy",
+    "auto-start-work": "Automatyczne uruchamianie pracy",
+    "auto-start-work-desc": "Automatycznie uruchamiaj licznik czasu pracy po przerwie",
+    "compact-mode": "Tryb kompaktowy",
+    "compact-mode-desc": "Bardziej krótki i minimalistyczny wygląd widżetu",
+    "long-break-duration": "Długi czas przerwy",
+    "long-break-duration-desc": "Czas trwania długich przerw w minutach",
+    "sessions-before-long-break": "Sesje przed długą przerwą",
+    "sessions-before-long-break-desc": "Liczba sesji pracy przed dłuższą przerwą",
+    "short-break-duration": "Czas trwania krótkiej przerwy",
+    "short-break-duration-desc": "Czas trwania krótkich przerw w minutach",
+    "work-duration": "Czas pracy",
+    "work-duration-desc": "Czas trwania każdej sesji roboczej w minutach"
+  },
+  "toast": {
+    "break-finished": "Koniec przerwy! Gotowy do skupienia?",
+    "long-break-finished": "Długa przerwa dobiegła końca! Gotowy na nowy cykl?",
+    "title": "Pomodoro",
+    "work-finished": "Sesja pracy zakończona! Czas na przerwę."
+  }
+}

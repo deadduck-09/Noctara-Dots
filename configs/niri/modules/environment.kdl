@@ -1,0 +1,42 @@
+
+//    ███████╗███╗   ██╗██╗   ██╗██╗██████╗  ██████╗ ███╗   ██╗███╗   ███╗███████╗███╗   ██╗████████╗
+//    ██╔════╝████╗  ██║██║   ██║██║██╔══██╗██╔═══██╗████╗  ██║████╗ ████║██╔════╝████╗  ██║╚══██╔══╝
+//    █████╗  ██╔██╗ ██║██║   ██║██║██████╔╝██║   ██║██╔██╗ ██║██╔████╔██║█████╗  ██╔██╗ ██║   ██║   
+//    ██╔══╝  ██║╚██╗██║╚██╗ ██╔╝██║██╔══██╗██║   ██║██║╚██╗██║██║╚██╔╝██║██╔══╝  ██║╚██╗██║   ██║   
+//    ███████╗██║ ╚████║ ╚████╔╝ ██║██║  ██║╚██████╔╝██║ ╚████║██║ ╚═╝ ██║███████╗██║ ╚████║   ██║   
+//    ╚══════╝╚═╝  ╚═══╝  ╚═══╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   
+//                                                                                                   
+
+environment {
+  QT_QPA_PLATFORMTHEME "qt6ct"
+  XCURSOR_THEME "Bibata-Modern-Classic"   // Make sure you have this installed.
+  XCURSOR_SIZE "24"
+  GTK_CURSOR_THEME "Bibata-Modern-Classic"
+}
+
+cursor {
+  xcursor-theme "Bibata-Modern-Classic"
+  xcursor-size 24
+}
+
+hotkey-overlay {
+  // Uncommenting disables the "Important Hotkeys" pop-up
+  skip-at-startup
+}
+
+// Uncomment this line to ask the clients to omit their client-side decoration if possible.
+// After enabling or disabling this, apps may require a restart.
+prefer-no-csd
+
+// Screenshot path 
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+// Allows notification actions and window activation from Noctalia.
+debug {
+  honor-xdg-activation-with-invalid-serial
+}
+
+// Locks System when lid closes
+switch-events {
+    lid-close { spawn "noctalia" "msg" "session" "lock-and-suspend"; }
+}

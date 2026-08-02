@@ -1,0 +1,20 @@
+{
+  "panel": {
+    "countdown": "Đếm ngược",
+    "pause": "Tạm dừng",
+    "reset": "Đặt lại",
+    "resume": "Tiếp tục",
+    "settings": "Cài đặt tiện ích",
+    "start": "Bắt đầu",
+    "stopwatch": "Đồng hồ bấm giờ",
+    "title": "Hẹn giờ"
+  },
+  "settings": {
+    "compact-mode": "Chế độ thu gọn",
+    "compact-mode-desc": "Ẩn thanh tiến trình tròn để giao diện gọn gàng hơn"
+  },
+  "toast": {
+    "finished": "Hết giờ!",
+    "title": "Hẹn giờ"
+  }
+}

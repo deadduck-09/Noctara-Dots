@@ -1,0 +1,59 @@
+
+//    ██╗    ██╗██╗███╗   ██╗██████╗  ██████╗ ██╗    ██╗      ██████╗ ██╗   ██╗██╗     ███████╗███████╗
+//    ██║    ██║██║████╗  ██║██╔══██╗██╔═══██╗██║    ██║      ██╔══██╗██║   ██║██║     ██╔════╝██╔════╝
+//    ██║ █╗ ██║██║██╔██╗ ██║██║  ██║██║   ██║██║ █╗ ██║█████╗██████╔╝██║   ██║██║     █████╗  ███████╗
+//    ██║███╗██║██║██║╚██╗██║██║  ██║██║   ██║██║███╗██║╚════╝██╔══██╗██║   ██║██║     ██╔══╝  ╚════██║
+//    ╚███╔███╔╝██║██║ ╚████║██████╔╝╚██████╔╝╚███╔███╔╝      ██║  ██║╚██████╔╝███████╗███████╗███████║
+//     ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝  ╚══╝╚══╝       ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚══════╝
+//   
+
+// window rules let you adjust behaviour for individual windows.
+
+// Enable rounded corners for all windows.
+window-rule {
+  geometry-corner-radius 9
+  clip-to-geometry true
+  draw-border-with-background false
+  opacity 0.975
+}
+// Work around WezTerm's initial configure bug
+window-rule {
+  match app-id=r#"^org\.wezfurlong\.wezterm$"#
+  default-column-width {}
+}
+
+// Apps:blur them all with xray for a better performance // 
+window-rule {
+  background-effect {
+    blur true 
+    xray true
+  }
+}
+// Open picture-in-pictures as floating by default.
+window-rule {
+  match app-id=r#"firefox"# title="^Picture-in-Picture$"
+  open-floating true 
+}
+// Block out two password managers from screen capture.
+/-window-rule {
+  match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+  match app-id=r#"^org\.gnome\.World\.Secrets$"#
+
+  block-out-from "screen-capture"
+}
+// Open browser in full screen
+window-rule {
+  match app-id="helium"   // add any browser you use.
+  background-effect{
+    blur true
+    xray true
+  }
+  open-maximized true
+}
+// Floating Noctalia settings window.
+window-rule {
+  match app-id="dev.noctalia.Noctalia"
+  open-floating true
+  default-column-width { fixed 850; }
+  default-window-height { fixed 700; }
+}

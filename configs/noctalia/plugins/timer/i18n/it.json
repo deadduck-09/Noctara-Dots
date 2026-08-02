@@ -1,0 +1,20 @@
+{
+  "panel": {
+    "countdown": "Countdown",
+    "pause": "Pausa",
+    "reset": "Reimposta",
+    "resume": "Riprendi",
+    "settings": "Impostazioni",
+    "start": "Avvia",
+    "stopwatch": "Cronometro",
+    "title": "Timer"
+  },
+  "settings": {
+    "compact-mode": "Modalità compatta",
+    "compact-mode-desc": "Nascondi la barra di avanzamento circolare per un aspetto più pulito"
+  },
+  "toast": {
+    "finished": "Timer terminato",
+    "title": "Timer"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "panel": {
+    "long-break": "長休息",
+    "pause": "暫停",
+    "reset": "重置",
+    "reset-all": "全部重置",
+    "resume": "繼續",
+    "session": "環節",
+    "settings": "小工具設定",
+    "short-break": "短休息",
+    "skip": "跳過",
+    "start": "開始",
+    "title": "番茄鐘",
+    "work": "工作"
+  },
+  "settings": {
+    "auto-start-breaks": "自動切換休息",
+    "auto-start-breaks-desc": "在工作環節後自動開始計時休息時間",
+    "auto-start-work": "自動切換工作",
+    "auto-start-work-desc": "在休息環節後自動開始計時工作時間",
+    "compact-mode": "緊湊模式",
+    "compact-mode-desc": "讓小工具看起來更小更精練",
+    "long-break-duration": "長休息時長",
+    "long-break-duration-desc": "設定想長休息幾分鐘",
+    "sessions-before-long-break": "長休息前的節數",
+    "sessions-before-long-break-desc": "設定在一個長休息前該有幾個工作環節",
+    "short-break-duration": "短休息時長",
+    "short-break-duration-desc": "設定想短休息幾分鐘",
+    "work-duration": "工作時長",
+    "work-duration-desc": "設定每次的工作環節該有幾分鐘"
+  },
+  "toast": {
+    "break-finished": "休息時間到了! 準備好專心了嗎?",
+    "long-break-finished": "長休息結束了! 準備好再來一輪了嗎?",
+    "title": "番茄鐘",
+    "work-finished": "工作環節完成! 該休息一下了"
+  }
+}

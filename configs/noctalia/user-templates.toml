@@ -1,0 +1,29 @@
+[config]
+
+[templates]
+
+[backdrop]
+enabled      = true
+blur_intensity = 0.5
+tint_intensity = 0.3
+# User-defined templates
+# Add your custom templates below
+# Example:
+# [templates.myapp]
+# input_path = "~/.config/noctalia/templates/myapp.css"
+# output_path = "~/.config/myapp/theme.css"
+# post_hook = "myapp --reload-theme"
+
+# Remove this section and add your own templates
+#[templates.placeholder]
+#input_path = "/etc/xdg/quickshell/noctalia-shell/Assets/Templates/noctalia.json"
+#output_path = "/home/gigi/.cache/noctalia/placeholder.json"
+
+[templates.sddm-noctalia]
+input_path = "/usr/share/sddm/themes/sddm-noctalia/template.conf"
+output_path = "/usr/share/sddm/themes/sddm-noctalia/theme.conf"
+
+[templates.nvim-base16]
+input_path = "~/.config/nvim/lua/matugen-template.lua"
+output_path = "~/.config/nvim/lua/matugen.lua"
+post_hook = 'pkill -SIGUSR1 nvim'

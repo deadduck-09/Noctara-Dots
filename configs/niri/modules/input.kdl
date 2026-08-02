@@ -1,0 +1,69 @@
+
+//    ██╗███╗   ██╗██████╗ ██╗   ██╗████████╗    ██████╗ ███████╗██╗   ██╗██╗ ██████╗███████╗███████╗
+//    ██║████╗  ██║██╔══██╗██║   ██║╚══██╔══╝    ██╔══██╗██╔════╝██║   ██║██║██╔════╝██╔════╝██╔════╝
+//    ██║██╔██╗ ██║██████╔╝██║   ██║   ██║       ██║  ██║█████╗  ██║   ██║██║██║     █████╗  ███████╗
+//    ██║██║╚██╗██║██╔═══╝ ██║   ██║   ██║       ██║  ██║██╔══╝  ╚██╗ ██╔╝██║██║     ██╔══╝  ╚════██║
+//    ██║██║ ╚████║██║     ╚██████╔╝   ██║       ██████╔╝███████╗ ╚████╔╝ ██║╚██████╗███████╗███████║
+//    ╚═╝╚═╝  ╚═══╝╚═╝      ╚═════╝    ╚═╝       ╚═════╝ ╚══════╝  ╚═══╝  ╚═╝ ╚═════╝╚══════╝╚══════╝
+//                                                                                                   
+
+input {
+  keyboard {
+    xkb {
+      //layout "us,ru"
+      
+      // If this section is empty, niri will fetch xkb settings from org.freedesktop.locale1.
+      // You can control these using localectl set-x11-keymap.
+    }
+
+    // Enable numlock on startup, omitting this setting disables it.
+    numlock
+  }
+
+  // Libinput settings.
+  touchpad {
+    // off
+    tap 
+    dwt
+    // dwtp
+    // drag false
+    // drag-lock
+    natural-scroll
+    // accel-speed 0.2
+    // accel-profile "flat"
+    // scroll-method "two-fingers"
+    // disabled-on-external-mouse
+  }
+
+  mouse {
+    // off
+    // natural-scroll
+    // accel-speed 0.2
+    // accel-profile "flat"
+    // scroll-method "no-scroll"
+  }
+
+  trackpoint {
+    // off
+    // natural-scroll
+    // accel-speed 0.2
+    // accel-profile "flat"
+    // scroll-method "on-button-down"
+    // scroll-button 273 
+    // scroll-button-lock
+    // middle-emulation
+  }
+
+  // Uncomment to make the mouse warp to the center of newly focused windows.
+  // warp-mouse-to-focus
+
+  // Focus the window the mouse is on, max-scroll-amount="0%" makes it work only on windows already fully on screen
+  focus-follows-mouse
+}
+
+// Hot corners Gestures
+gestures {
+  hot-corners {
+    off
+  }
+}

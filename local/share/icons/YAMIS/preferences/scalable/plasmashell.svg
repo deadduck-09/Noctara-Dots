@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" width="64" height="64" version="1.1" viewBox="0 0 16.933 16.933" id="svg7" sodipodi:docname="plasmashell.svg" inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)">
+  <sodipodi:namedview id="namedview7" pagecolor="#9c4444" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="6.15625" inkscape:cx="15.675127" inkscape:cy="27.208122" inkscape:window-width="1226" inkscape:window-height="669" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="0" inkscape:current-layer="svg7" showgrid="false"/>
+  <defs id="defs2">
+    <style id="current-color-scheme" type="text/css">.ColorScheme-Text {color:#d8dee9} .ColorScheme-Highlight {color:#3b4252}</style>
+  </defs>
+  <metadata id="metadata2">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.352771" d="M 10.230349,3.1749375 8.9603779,4.4096345 11.288664,6.7026452 8.9603779,8.9956564 10.230349,10.230351 13.758061,6.7026452 Z M 5.6443334,3.5277091 A 0.7055414,0.7055414 0 0 0 4.9387925,4.2332491 0.7055414,0.7055414 0 0 0 5.6443334,4.9387913 0.7055414,0.7055414 0 0 0 6.3498758,4.2332491 0.7055414,0.7055414 0 0 0 5.6443334,3.5277091 Z M 4.056866,7.4081871 A 0.88192668,0.88192668 0 0 0 3.1749389,8.2901168 0.88192668,0.88192668 0 0 0 4.056866,9.1720416 0.88192668,0.88192668 0 0 0 4.9387925,8.2901168 0.88192668,0.88192668 0 0 0 4.056866,7.4081871 Z M 7.4081864,10.935898 A 1.4110825,1.4110826 0 0 0 5.9971043,12.34698 1.4110825,1.4110826 0 0 0 7.4081864,13.758062 1.4110825,1.4110826 0 0 0 8.8192693,12.34698 1.4110825,1.4110826 0 0 0 7.4081864,10.935898 Z" class="ColorScheme-Text" id="path5-4"/>
+</svg>

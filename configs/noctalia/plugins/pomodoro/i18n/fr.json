@@ -1,0 +1,38 @@
+{
+  "panel": {
+    "long-break": "Pause Longue",
+    "pause": "Pause",
+    "reset": "Réinitialiser",
+    "reset-all": "Tout réinitialiser",
+    "resume": "Reprendre",
+    "session": "Session",
+    "settings": "Paramètres du widget",
+    "short-break": "Courte pause",
+    "skip": "Ignorer",
+    "start": "Démarrer",
+    "title": "Pomodoro",
+    "work": "Travail"
+  },
+  "settings": {
+    "auto-start-breaks": "Démarrages automatiques interrompus",
+    "auto-start-breaks-desc": "Démarrer automatiquement le minuteur de pause après une session de travail",
+    "auto-start-work": "Démarrage auto du bureau",
+    "auto-start-work-desc": "Démarrer automatiquement le minuteur de travail après la pause",
+    "compact-mode": "Mode compact",
+    "compact-mode-desc": "Un aspect plus court et plus minimal pour le widget",
+    "long-break-duration": "Durée de pause longue",
+    "long-break-duration-desc": "Durée des longues pauses en minutes",
+    "sessions-before-long-break": "Sessions avant longue pause",
+    "sessions-before-long-break-desc": "Nombre de sessions de travail avant une pause longue",
+    "short-break-duration": "Durée de la pause courte",
+    "short-break-duration-desc": "Durée des pauses courtes en minutes",
+    "work-duration": "Durée de travail",
+    "work-duration-desc": "Durée de chaque session de travail en minutes"
+  },
+  "toast": {
+    "break-finished": "La pause est finie ! Prêt à se concentrer ?",
+    "long-break-finished": "Longue pause terminée ! Prêt pour un nouveau cycle ?",
+    "title": "Pomodoro",
+    "work-finished": "Session de travail terminée ! L'heure est à la pause."
+  }
+}

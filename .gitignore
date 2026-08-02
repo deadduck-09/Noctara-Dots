@@ -1,0 +1,16 @@
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+
+# Logs
+*.log
+
+# Temporary
+*.tmp

@@ -1,0 +1,38 @@
+{
+  "panel": {
+    "long-break": "Long Break",
+    "pause": "Pause",
+    "reset": "Reset",
+    "reset-all": "Reset All",
+    "resume": "Resume",
+    "session": "Session",
+    "settings": "Widget Settings",
+    "short-break": "Short Break",
+    "skip": "Skip",
+    "start": "Start",
+    "title": "Pomodoro",
+    "work": "Work"
+  },
+  "settings": {
+    "auto-start-breaks": "Auto-start Breaks",
+    "auto-start-breaks-desc": "Automatically start break timer after work session",
+    "auto-start-work": "Auto-start Work",
+    "auto-start-work-desc": "Automatically start work timer after break",
+    "compact-mode": "Compact Mode",
+    "compact-mode-desc": "A shorter and more minimal look for the widget",
+    "long-break-duration": "Long Break Duration",
+    "long-break-duration-desc": "Duration of long breaks in minutes",
+    "sessions-before-long-break": "Sessions Before Long Break",
+    "sessions-before-long-break-desc": "Number of work sessions before a long break",
+    "short-break-duration": "Short Break Duration",
+    "short-break-duration-desc": "Duration of short breaks in minutes",
+    "work-duration": "Work Duration",
+    "work-duration-desc": "Duration of each work session in minutes"
+  },
+  "toast": {
+    "break-finished": "Break over! Ready to focus?",
+    "long-break-finished": "Long break over! Ready for a new cycle?",
+    "title": "Pomodoro",
+    "work-finished": "Work session complete! Time for a break."
+  }
+}

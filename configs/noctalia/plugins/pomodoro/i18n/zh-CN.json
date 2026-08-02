@@ -1,0 +1,38 @@
+{
+  "panel": {
+    "long-break": "长时间休息",
+    "pause": "暂停",
+    "reset": "重置",
+    "reset-all": "全部重置",
+    "resume": "恢复",
+    "session": "会话",
+    "settings": "小部件设置",
+    "short-break": "短暂休息",
+    "skip": "跳过",
+    "start": "开始",
+    "title": "番茄工作法",
+    "work": "工作"
+  },
+  "settings": {
+    "auto-start-breaks": "自动启动中断",
+    "auto-start-breaks-desc": "在工作会话后自动启动休息计时器",
+    "auto-start-work": "自动启动工作区",
+    "auto-start-work-desc": "休息后自动开始工作计时器",
+    "compact-mode": "紧凑模式",
+    "compact-mode-desc": "更短更简洁的 Widget 外观",
+    "long-break-duration": "长时间休息时长",
+    "long-break-duration-desc": "长时间休息的持续时间（分钟）",
+    "sessions-before-long-break": "长时间休息前的会话",
+    "sessions-before-long-break-desc": "长休息前的工作会话数",
+    "short-break-duration": "短暂休息时长",
+    "short-break-duration-desc": "短休息时长（分钟）",
+    "work-duration": "工作时长",
+    "work-duration-desc": "每个工作阶段的持续时间（分钟）"
+  },
+  "toast": {
+    "break-finished": "休息结束！准备好专注了吗？",
+    "long-break-finished": "休息够了吗！准备好迎接新的循环了吗？",
+    "title": "番茄工作法",
+    "work-finished": "工作会话已完成！休息一下吧。"
+  }
+}

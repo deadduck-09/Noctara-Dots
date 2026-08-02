@@ -1,0 +1,38 @@
+{
+  "panel": {
+    "long-break": "Descanso Largo",
+    "pause": "Pausar",
+    "reset": "Restablecer",
+    "reset-all": "Restablecer todo",
+    "resume": "Reanudar",
+    "session": "Sesión",
+    "settings": "Ajustes del Widget",
+    "short-break": "Descanso Corto",
+    "skip": "Omitir",
+    "start": "Empezar",
+    "title": "Pomodoro",
+    "work": "Trabajo"
+  },
+  "settings": {
+    "auto-start-breaks": "Errores de inicio automático",
+    "auto-start-breaks-desc": "Iniciar automáticamente el temporizador de descanso después de la sesión de trabajo",
+    "auto-start-work": "Inicio automático del área de trabajo",
+    "auto-start-work-desc": "Iniciar automáticamente el temporizador de trabajo después del descanso",
+    "compact-mode": "Modo compacto",
+    "compact-mode-desc": "Un aspecto más corto y minimalista para el widget",
+    "long-break-duration": "Duración de la pausa larga",
+    "long-break-duration-desc": "Duración de las pausas largas en minutos",
+    "sessions-before-long-break": "Sesiones antes de una pausa larga",
+    "sessions-before-long-break-desc": "Número de sesiones de trabajo antes de un descanso largo",
+    "short-break-duration": "Duración de la pausa breve",
+    "short-break-duration-desc": "Duración de las pausas cortas en minutos",
+    "work-duration": "Duración del trabajo",
+    "work-duration-desc": "Duración de cada sesión de trabajo en minutos"
+  },
+  "toast": {
+    "break-finished": "¡Se acabó el descanso! ¿Listo para concentrarte?",
+    "long-break-finished": "¡Se acabó el descanso! ¿Listo para un nuevo ciclo?",
+    "title": "Pomodoro",
+    "work-finished": "¡Sesión de trabajo completada! Hora de un descanso."
+  }
+}

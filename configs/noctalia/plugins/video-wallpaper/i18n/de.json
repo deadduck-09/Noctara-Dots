@@ -1,0 +1,199 @@
+{
+  "barWidget": {
+    "contextMenu": {
+      "panel": "Panel",
+      "enable": "Aktivieren",
+      "disable": "Deaktivieren",
+      "pause": "Pausieren",
+      "play": "Fortsetzen",
+      "unmute": "Stummschaltung aufheben",
+      "mute": "Stummschalten"
+    },
+    "tooltip": "Öffne den Videohintergrund-Manager"
+  },
+  "common": {
+    "tool_row": {
+      "random": {
+        "text": "Zufällig",
+        "tooltip": "Wählt ein beliebiges Hintergrundbild aus dem Hintergrundbilder Ordner aus"
+      },
+      "clear": {
+        "text": "Löschen",
+        "tooltip": "Aktuelles Hintergrundbild löschen"
+      },
+      "pause": {
+        "text": "Pausieren",
+        "tooltip": "Video-Hintergrundbild pausieren"
+      },
+      "play": {
+        "text": "Fortsetzen",
+        "tooltip": "Video-Hintergrundbild fortsetzen"
+      },
+      "unmute": {
+        "text": "Ton aktivieren",
+        "tooltip": "Stummschaltung des Video-Hintergrunds aufheben"
+      },
+      "mute": {
+        "text": "Stummschalten",
+        "tooltip": "Video-Hintergrund stummschalten"
+      }
+    }
+  },
+  "main": {
+    "no_backend_found": "{backend} wurde nicht gefunden!"
+  },
+  "panel": {
+    "title": "Video Hintergrund-Manager",
+    "tool_row": {
+      "folder": {
+        "text": "Ordner",
+        "tooltip": "Wähle einen anderen Ordner, der die Hintergrundbilder enthält."
+      },
+      "refresh": {
+        "text": "Aktualisieren",
+        "tooltip": "Thumbnails aktualisieren, alte entfernen und neue erstellen"
+      },
+      "monitor_specific": {
+        "tooltip": "Aktiviere/deaktiviere die monitorspezifische Einstellung."
+      },
+      "enabled": {
+        "label": "Aktiviert"
+      }
+    },
+    "loading": "Laden...",
+    "file_picker": {
+      "title": "Hintergrundbilder Ordner auswählen"
+    }
+  },
+  "settings": {
+    "toggle": {
+      "label": "Video-Hintergrundbilder aktivieren",
+      "description": "Aktiviere Video-Hintergrundbilder, die mit QtMultimedia angezeigt werden"
+    },
+    "backend": {
+      "label": "Aktives Backend",
+      "description": "Was zum Rendern der Videohintergründe verwendet wird.",
+      "qt6_multimedia": "Qt6 Multimedia",
+      "mpvpaper": "Mpvpaper"
+    },
+    "monitor_specific": {
+      "label": "Monitor spezifische Einstellungen",
+      "description": "Wähle aus, ob bestimmte Einstellungen für bestimmte Monitore gelten sollen. (Nur bei Multi-Monitor-Setups verfügbar)"
+    },
+    "tab_bar": {
+      "general": "Allgemein",
+      "automation": "Automatisierung",
+      "advanced": "Erweitert"
+    },
+    "general": {
+      "wallpapers_folder": {
+        "title": {
+          "label": "Hintergrundbilder-Ordner",
+          "description": "Der Ordner, der alle Video-Hintergrundbilder enthält"
+        },
+        "text_input": {
+          "placeholder": "/path/to/folder/with/wallpapers"
+        },
+        "icon_button": {
+          "tooltip": "Hintergrundbilder Ordner auswählen"
+        },
+        "file_picker": {
+          "title": "Hintergrundbilder Ordner auswählen"
+        }
+      },
+      "select_wallpaper": {
+        "title": {
+          "label": "Hintergrundbild auswählen",
+          "description": "Aktuelles Video-Hintergrundbild auswählen"
+        },
+        "icon_button": {
+          "tooltip": "Aktuelles Video-Hintergrundbild auswählen"
+        },
+        "file_picker": {
+          "title": "Aktuelles Hintergrundbild auswählen"
+        }
+      },
+      "fill_mode": {
+        "label": "Füllmodus",
+        "description": "Der Modus, in dem das Hintergrundbild in den Hintergrund eingefügt wird",
+        "fit": "Passform",
+        "crop": "Zuschneiden",
+        "stretch": "Dehnen"
+      },
+      "orientation": {
+        "label": "Orientierung",
+        "description": "Die Ausrichtung der Videowiedergabe kann ein Vielfaches von 90 sein.."
+      },
+      "volume": {
+        "label": "Volume",
+        "description": "Aktuelle Lautstärke des abgespielten Videos"
+      }
+    },
+    "automation": {
+      "toggle": {
+        "label": "Automatisierung",
+        "description": "Automatischen Hintergrundbildwechsel planen"
+      },
+      "mode": {
+        "label": "Modus wechseln",
+        "description": "Der Modus zum Auswählen des neuen Hintergrundbildes",
+        "random": "Zufällig",
+        "alphabetically": "Alphabetisch"
+      },
+      "time": {
+        "label": "Zeit",
+        "description": "Wie lange es dauern soll den Hintergrund zu wechseln.",
+        "m": "{minute}m",
+        "h": "{hour}h",
+        "hour": "{count} Stunde",
+        "hour-plural": "{count} Stunden",
+        "minute": "{count} Minute",
+        "minute-plural": "{count} Minuten",
+        "custom": {
+          "create": {
+            "tooltip": "Erstelle eine individuelle Zeit",
+            "label": "Benutzerdefinierte Zeit hinzufügen",
+            "description": "Zeit im Format HH:MM eingeben (z. B. 1:20)",
+            "placeholder": "Beispiel, 1:15",
+            "save": "Speichern",
+            "cancel": "Abbrechen"
+          },
+          "remove": "Entfernen"
+        }
+      }
+    },
+    "advanced": {
+      "fill_mode": {
+        "label": "Füllmodus",
+        "description": "Der Modus, in dem das Hintergrundbild in den Hintergrund eingefügt wird",
+        "fit": "Passform",
+        "crop": "Zuschneiden",
+        "stretch": "Dehnen"
+      },
+      "profile": {
+        "label": "Mpv Profil",
+        "description": "Das von mpv verwendete Profil. Verwende Schnell für bessere Leistung.",
+        "default": "Standard",
+        "fast": "Schnell",
+        "high_quality": "Hone Qualität",
+        "low_latency": "Niedrige Latenz"
+      },
+      "hardware_acceleration": {
+        "label": "Hardwarebeschleunigung",
+        "description": "Verlagert die Videodekodierung von der CPU auf die GPU bzw. auf dedizierte Hardware."
+      },
+      "mpv_socket": {
+        "label": "Mpvpaper Socket",
+        "description": "Der mpvpaper Socket, mit dem Noctalia verbunden ist.",
+        "input_placeholder": "Beispiel: /tmp/mpv-socket"
+      },
+      "orientation": {
+        "label": "Ausrichtung",
+        "description": "Die Ausrichtung des abgespielten Videos kann ein beliebiges Vielfaches von 90 Grad betragen."
+      },
+      "no_backend": {
+        "label": "Kein aktives Backend..."
+      }
+    }
+  }
+}

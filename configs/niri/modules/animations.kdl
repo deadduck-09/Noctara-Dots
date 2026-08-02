@@ -1,0 +1,64 @@
+
+//     █████╗ ███╗   ██╗██╗███╗   ███╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗███████╗
+//    ██╔══██╗████╗  ██║██║████╗ ████║██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝
+//    ███████║██╔██╗ ██║██║██╔████╔██║███████║   ██║   ██║██║   ██║██╔██╗ ██║███████╗
+//    ██╔══██║██║╚██╗██║██║██║╚██╔╝██║██╔══██║   ██║   ██║██║   ██║██║╚██╗██║╚════██║
+//    ██║  ██║██║ ╚████║██║██║ ╚═╝ ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║███████║
+//    ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+//                                                                                   
+
+animations {
+    // Workspace switching (Fast & clean direct switch)
+    workspace-switch {
+        duration-ms 225
+        curve "cubic-bezier" 0.2 0.0 0.0 1.0
+    }
+
+    // Window opening (Burst open, decelerate smoothly into place)
+    window-open {
+        duration-ms 300
+        curve "cubic-bezier" 0.05 0.7 0.1 1.0
+    }
+
+    // Window closing (Fast, decisive exit)
+    window-close {
+        duration-ms 200
+        curve "cubic-bezier" 0.3 0.0 0.8 0.15
+    }
+
+    // Window moving / dragging
+    window-movement {
+        duration-ms 250
+        curve "cubic-bezier" 0.2 0.0 0.0 1.0
+    }
+
+    // Window resizing
+    window-resize {
+        duration-ms 250
+        curve "cubic-bezier" 0.2 0.0 0.0 1.0
+    }
+
+    // Horizontal trackpad / workspace panning
+    horizontal-view-movement {
+        duration-ms 250
+        curve "cubic-bezier" 0.2 0.0 0.0 1.0
+    }
+
+    // Overview & layer overlays
+    overview-open-close {
+        duration-ms 250
+        curve "cubic-bezier" 0.05 0.7 0.1 1.0
+    }
+
+    recent-windows-close {
+        duration-ms 200
+        curve "cubic-bezier" 0.3 0.0 0.8 0.15
+    }
+
+    screenshot-ui-open {
+        duration-ms 200
+        curve "cubic-bezier" 0.05 0.7 0.1 1.0
+    }
+
+    slowdown 1.0
+}

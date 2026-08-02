@@ -1,0 +1,9 @@
+{
+  "autoMount": true,
+  "fileBrowser": "nautilus",
+  "terminalCommand": "kitty",
+  "showNotifications": true,
+  "hideWhenEmpty": true,
+  "showBadge": true,
+  "iconColor": "none"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "pomodoro",
+  "name": "Pomodoro",
+  "version": "1.2.0",
+  "minNoctaliaVersion": "4.0.0",
+  "author": "notprayasmitra",
+  "license": "MIT",
+  "repository": "https://github.com/noctalia-dev/noctalia-plugins",
+  "description": "A pomodoro timer plugin to help boost productivity.",
+  "tags": [
+    "Bar",
+    "Productivity"
+  ],
+  "entryPoints": {
+    "main": "Main.qml",
+    "barWidget": "BarWidget.qml",
+    "panel": "Panel.qml",
+    "settings": "Settings.qml"
+  },
+  "dependencies": {
+    "plugins": []
+  },
+  "metadata": {
+    "defaultSettings": {
+      "workDuration": 25,
+      "shortBreakDuration": 5,
+      "longBreakDuration": 15,
+      "sessionsBeforeLongBreak": 4,
+      "autoStartBreaks": false,
+      "autoStartWork": false
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "panel": {
+    "long-break": "Тривала перерва",
+    "pause": "Пауза",
+    "reset": "Скинути",
+    "reset-all": "Скинути все",
+    "resume": "Відновити",
+    "session": "Сеанс",
+    "settings": "Налаштування віджетів",
+    "short-break": "Коротка перерва",
+    "skip": "Пропустити",
+    "start": "Почати",
+    "title": "Pomodoro",
+    "work": "Робота"
+  },
+  "settings": {
+    "auto-start-breaks": "Помилки автозапуску",
+    "auto-start-breaks-desc": "Автоматично запускати таймер перерви після робочої сесії",
+    "auto-start-work": "Автозапуск Workspace",
+    "auto-start-work-desc": "Автоматично запускати робочий таймер після перерви",
+    "compact-mode": "Компактний режим",
+    "compact-mode-desc": "Коротший та мінімалістичніший вигляд для віджета",
+    "long-break-duration": "Тривалість довгої перерви",
+    "long-break-duration-desc": "Тривалість довгих перерв у хвилинах",
+    "sessions-before-long-break": "Сеанси перед довгою перервою",
+    "sessions-before-long-break-desc": "Кількість робочих сесій перед довгою перервою",
+    "short-break-duration": "Тривалість короткої перерви",
+    "short-break-duration-desc": "Тривалість коротких перерв у хвилинах",
+    "work-duration": "Тривалість роботи",
+    "work-duration-desc": "Тривалість кожної робочої сесії в хвилинах"
+  },
+  "toast": {
+    "break-finished": "Перерва закінчилася! Готові зосередитися?",
+    "long-break-finished": "Довга перерва закінчилася! Готові до нового циклу?",
+    "title": "Pomodoro",
+    "work-finished": "Робочу сесію завершено! Час на перерву."
+  }
+}

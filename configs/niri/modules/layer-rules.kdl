@@ -1,0 +1,31 @@
+
+//    ██╗      █████╗ ██╗   ██╗███████╗██████╗       ██████╗ ██╗   ██╗██╗     ███████╗███████╗
+//    ██║     ██╔══██╗╚██╗ ██╔╝██╔════╝██╔══██╗      ██╔══██╗██║   ██║██║     ██╔════╝██╔════╝
+//    ██║     ███████║ ╚████╔╝ █████╗  ██████╔╝█████╗██████╔╝██║   ██║██║     █████╗  ███████╗
+//    ██║     ██╔══██║  ╚██╔╝  ██╔══╝  ██╔══██╗╚════╝██╔══██╗██║   ██║██║     ██╔══╝  ╚════██║
+//    ███████╗██║  ██║   ██║   ███████╗██║  ██║      ██║  ██║╚██████╔╝███████╗███████╗███████║
+//    ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝      ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚══════╝
+//                                                                                            
+
+layer-rule {
+  match namespace="^noctalia-backdrop*" //blur wallpaper on overview for noctalia-shell, enable "Overview wallpaper" in the settings
+  place-within-backdrop true
+}
+
+// Noctalia: blur everwhere without xray for better look //
+layer-rule {
+  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
+  background-effect {
+    xray false
+    blur true
+  }
+}
+
+/* Enable blur on noctalia's window switcher and disable xray. */
+layer-rule {
+    match namespace="noctalia-window-switcher"
+    background-effect {
+        blur true
+        xray false
+    }
+}

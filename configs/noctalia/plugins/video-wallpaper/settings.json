@@ -1,0 +1,28 @@
+{
+  "activeBackend": "qt6-multimedia",
+  "automationMode": "random",
+  "automationTime": 300,
+  "fillMode": "fit",
+  "mpvSocket": "/tmp/mpv-socket",
+  "profile": "default",
+  "volume": 1,
+  "wallpapersFolder": "/home/gigi/Pictures/Wallpapers/Live-Wallpapers",
+  "thumbCacheReady": true,
+  "enabled": true,
+  "eDP-1": {
+    "currentWallpaper": "/home/gigi/Pictures/Wallpapers/Live-Wallpapers/abi-toads-terrarium.1920x1080.mp4",
+    "noctaliaWallpaper": "/home/gigi/Pictures/Wallpapers/a_cartoon_of_a_girl_with_a_cat_on_her_head.jpg",
+    "isPlaying": true,
+    "isMuted": true,
+    "orientation": 0,
+    "volume": 1,
+    "automation": false,
+    "automationMode": "random",
+    "automationTime": 300,
+    "hardwareAcceleration": false,
+    "profile": "default",
+    "fillMode": "fit"
+  },
+  "monitorSpecific": false,
+  "automationCustomTime": []
+}
