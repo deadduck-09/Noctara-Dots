@@ -38,16 +38,6 @@ Noctara-dots solves that problem.
 
 It extends Noctalia into a complete desktop experience by bringing everything together with a consistent design and workflow.
 
-Out of the box you'll get:
-
-- 🌙 Built around Noctalia v5
-- 🪟 Niri & Hyprland support
-- 🚀 One-command installation
-- 🧩 Modular configuration files
-- 🎨 Consistent theming across applications
-- 💻 Ready-to-use development environment
-- 🔄 Automatic backups & restore
-
 Once installed, simply log out, log back in, and start using your desktop.
 
 If something isn't exactly how you like it, changing it is easy. The configurations are modular, making it simple to swap applications, edit keybindings, or customize individual components without digging through one massive configuration file.
