@@ -140,8 +140,8 @@ For complete, detailed instructions on tweaking, extending, and troubleshooting 
 > 💡 **Detailed Guides:**
 >
 > - [📖 **Full Wiki & User Guide**](https://deadduck-09.github.io/Noctara-Docs/) _(Overview of all detailed docs)_
-> - [⚙️ **Window Manager Settingk**](https://deadduck-09.github.io/Noctara-Docs/configuration/window-managers/niri.html) _(How to swap apps, change keybindings, and edit themes)_
-> - [🪟 **Customization**](https://deadduck-09.github.io/Noctara-Docs/customization/wallpapers.html) _(Niri & Hyprland specific workflows)_
+> - [⚙️ **Window Manager Settingk**](https://deadduck-09.github.io/Noctara-Docs/configuration/window-managers/niri.html) _(Changing keybinds, env variables and monitor settings)_
+> - [🪟 **Customization**](https://deadduck-09.github.io/Noctara-Docs/customization/wallpapers.html) _(Changing Icons and wallpapers)_
 
 ---
 
@@ -183,20 +183,6 @@ Ctrl+Alt+Del
 2. Log back in.
 3. Enjoy your new desktop.
 4. Take a look through the configs and make it yours.
-
----
-
-### Installer Features
-
-The installer automatically:
-
-- Installs required packages
-- Detects whether you're using Niri or Hyprland
-- Installs matching configurations
-- Creates backups of existing configurations
-- Restores previous backups when requested
-- Handles official repositories and AUR packages
-- Installs missing dependencies
 
 ---
 
