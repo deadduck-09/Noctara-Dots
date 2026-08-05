@@ -4,7 +4,11 @@
 
 <sub><i>Because your desktop deserves better life choices.</i></sub>
 
-<img src="assets/desktop.png" width="100%">
+<br />
+
+<img src="assets/desktop.png" width="100%" alt="Noctara-dots Desktop Preview">
+
+<br />
 
 ![Arch Linux](https://img.shields.io/badge/Arch-Linux-1793D1?logo=arch-linux&logoColor=white)
 ![Wayland](https://img.shields.io/badge/Wayland-Niri%20%7C%20Hyprland-00BFFF)
@@ -16,66 +20,85 @@
 
 ---
 
-# ✨ Overview
+## 📌 Table of Contents
 
-**Noctara-dots** is my personal desktop rice for **Arch Linux**, built around **Noctalia v5**.
-
-The idea is simple. Install it, log back in, and have a clean desktop that's already configured and ready to use instead of spending hours tweaking everything yourself.
-
-Everything is modular, so if you don't like something, changing it is easy.
-
----
-
-# ❓ Why Noctara-dots?
-
-**Noctalia v5** already provides an incredible desktop shell with plenty of customization.
-
-However, Noctalia focuses on being a shell, not a complete desktop environment.
-
-You're still responsible for configuring your compositor, managing keybindings, setting up animations, choosing applications, matching themes across your terminal and editor, configuring media players, file managers, shell prompts, wallpapers, and dozens of little details that eventually turn into hours of configuration.
-
-Noctara-dots solves that problem.
-
-It extends Noctalia into a complete desktop experience by bringing everything together with a consistent design and workflow.
-
-Once installed, simply log out, log back in, and start using your desktop.
-
-If something isn't exactly how you like it, changing it is easy. The configurations are modular, making it simple to swap applications, edit keybindings, or customize individual components without digging through one massive configuration file.
+- [Overview](#-overview)
+- [Why Noctara-dots?](#-why-noctara-dots)
+- [Showcase](#-showcase)
+- [Features](#-features)
+- [Software Used](#-software-used)
+- [Documentation](#-documentation)
+- [Quick Start](#-quick-start)
+- [Keybindings](#%EF%B8%8F-keybindings)
+- [Default Applications](#-default-applications)
+- [Wallpapers](#-wallpapers)
+- [Repository Structure](#-repository-structure)
+- [Credits](#%EF%B8%8F-credits)
 
 ---
 
-# 🖼 Showcase
+## ✨ Overview
+
+**Noctara-dots** is a modular, ready-to-use desktop rice for **Arch Linux**, built around **Noctalia v5** for both **Niri** and **Hyprland** Wayland compositors.
+
+Instead of spending days manually tweaking individual configuration files, themes, animations, and keybindings, Noctara-dots delivers an out-of-the-box desktop experience that looks great and stays easy to customize.
+
+---
+
+## ❓ Why Noctara-dots?
+
+**Noctalia v5** provides a powerful shell, but configuring a complete desktop environment still requires configuring compositors, matching terminal themes, tweaking editors, setting up media control, and organizing keybindings.
+
+Noctara-dots bridges this gap by unifying these components into a consistent, modular framework:
+
+- 🧩 **Modular Architecture:** Tweak or swap individual applications without breaking your setup.
+- 🎨 **Unified Design:** Seamless colors, fonts, and aesthetics across shell, terminal, and editors.
+- ⚡ **Zero-Hassle Setup:** One-command installer configures packages, backup management, and configs automatically.
+
+---
+
+## 🖼 Showcase
 
 <details>
-<summary>🌙 Desktop</summary>
+<summary><strong>🌙 Desktop</strong></summary>
+
+<br>
 
 ![](assets/desktop-cc.png)
 
 </details>
 
 <details>
-<summary>💻 Terminal Setup</summary>
+<summary><strong>💻 Terminal Setup</strong></summary>
+
+<br>
 
 ![](assets/terminal-setup.png)
 
 </details>
 
 <details>
-<summary>📝 Neovim Setup</summary>
+<summary><strong>📝 Neovim Setup</strong></summary>
+
+<br>
 
 ![](assets/nvim-setup.png)
 
 </details>
 
 <details>
-<summary>🪟 Niri Overview</summary>
+<summary><strong>🪟 Niri Overview</strong></summary>
+
+<br>
 
 ![](assets/niri-overview.png)
 
 </details>
 
 <details>
-<summary>📊 Resources Monitor</summary>
+<summary><strong>📊 Resource Monitor</strong></summary>
+
+<br>
 
 ![](assets/resources.png)
 
@@ -83,62 +106,64 @@ If something isn't exactly how you like it, changing it is easy. The configurati
 
 ---
 
-# ✨ Features
+## ✨ Features
 
-- 🚀 One-command installation
-- 📦 Automatic package installation
-- 🔄 Backup and restore support
-- 🧩 Modular configuration files
-- 🪟 Niri & Hyprland support
-- 🎨 Consistent theming across applications
-- 💻 Ready-to-use development environment
+- 🚀 **Automated Installer:** Setup script handles packages, dependencies, and shell selection.
+- 📦 **Smart Backups:** Automatic backup and restore support for existing configuration files.
+- 🧩 **Fully Modular:** Clean, organized directory structure for easy customization.
+- 🪟 **Compositor Support:** Out-of-the-box profiles for **Niri**, **Hyprland** and **Mango**.
+- 💻 **Complete Workflow:** Integrated terminal apps, media tools, and resource monitoring.
 
 ---
 
-# 🛠 Software Used
+## 🛠 Software Used
 
 | Component          | Software        |
-| ------------------ | --------------- |
-| Desktop Shell      | Noctalia v5     |
-| Window Manager     | Niri / Hyprland |
-| Terminal           | Kitty           |
-| Shell              | Fish            |
-| Prompt             | Starship        |
-| Editor             | Neovim          |
-| File Manager       | Yazi            |
-| Music              | MPD + rmpc      |
-| Media Player       | MPV             |
-| System Information | Fastfetch       |
+| :----------------- | :-------------- |
+| **Desktop Shell**  | Noctalia v5     |
+| **Window Manager** | Niri / Hyprland |
+| **Terminal**       | Kitty           |
+| **Shell**          | Fish            |
+| **Prompt**         | Starship        |
+| **Editor**         | Neovim          |
+| **File Manager**   | Yazi            |
+| **Music**          | MPD + rmpc      |
+| **Media Player**   | MPV             |
+| **System Info**    | Fastfetch       |
 
 ---
 
-# 📦 Installation
+## 📚 Documentation
 
-## Requirements
+For complete, detailed instructions on tweaking, extending, and troubleshooting Noctara-dots, check out the documentation files:
 
-Before installing Noctara-dots, make sure you have:
-
-- An Arch Linux based distribution
-- Niri or Hyprland installed
-- Internet connection
-
-Don't worry if you don't have an AUR helper installed.
+> 💡 **Detailed Guides:**
+>
+> - [📖 **Full Wiki & User Guide**](https://deadduck-09.github.io/Noctara-Docs/) _(Overview of all detailed docs)_
+> - [⚙️ **Window Manager Settingk**](https://deadduck-09.github.io/Noctara-Docs/configuration/window-managers/niri.html) _(How to swap apps, change keybindings, and edit themes)_
+> - [🪟 **Customization**](https://deadduck-09.github.io/Noctara-Docs/customization/wallpapers.html) _(Niri & Hyprland specific workflows)_
 
 ---
+
+## 🚀 Quick Start
+
+### Requirements
+
+- An **Arch Linux** installation (or Arch-based distro)
+- Active internet connection
+- **Niri** or **Hyprland** installed
+
+---
+
+### Installation
 
 ## Automatic Installation (Recommended)
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/deadduck-09/noctara-dots.git
-cd noctara-dots
-```
-
-Make the installer executable:
-
-```bash
-chmod +x install.sh
+git clone https://github.com/deadduck-09/Noctara-Dots.git
+cd Noctara-Dots
 ```
 
 Run the installer:
