@@ -22,13 +22,14 @@ window-rule {
   default-column-width {}
 }
 
-// Apps:blur them all with xray for a better performance // 
+// Apps:blur them all with xray false // 
 window-rule {
   background-effect {
     blur true 
-    xray true
+    xray false
   }
 }
+
 // Open picture-in-pictures as floating by default.
 window-rule {
   match app-id=r#"firefox"# title="^Picture-in-Picture$"

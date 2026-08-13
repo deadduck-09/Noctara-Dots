@@ -17,7 +17,7 @@ layer-rule {
   match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
   background-effect {
     xray false
-    blur true
+    blur false
   }
 }
 

@@ -1,0 +1,67 @@
+animations {
+  off
+}
+
+blur {
+  off
+}
+
+layer-rule {
+  match namespace="^noctalia-backdrop*" //blur wallpaper on overview for noctalia-shell, enable "Overview wallpaper" in the settings
+  place-within-backdrop false
+}
+
+// Noctalia: blur everwhere without xray for better look //
+layer-rule {
+  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
+  background-effect {
+    xray false
+    blur false
+  }
+}
+
+/* Enable blur on noctalia's window switcher and disable xray. */
+layer-rule {
+    match namespace="noctalia-window-switcher"
+    background-effect {
+        blur false
+        xray false
+    }
+}
+
+// Enable rounded corners for all windows.
+window-rule {
+  geometry-corner-radius 0
+  clip-to-geometry true
+  draw-border-with-background false
+  opacity 1.0
+}
+
+// Apps:blur them all with xray for a better performance // 
+window-rule {
+  background-effect {
+    blur false 
+    xray false
+  }
+}
+
+layout {
+  gaps 4
+  center-focused-column "never"
+  always-center-single-column
+  preset-column-widths {
+    proportion 0.5
+    proportion 0.66667
+    proportion 1.0
+  }
+
+  default-column-width {proportion 0.5; }
+
+  border {
+    width 1
+  }
+
+  shadow {
+    off
+  }
+}

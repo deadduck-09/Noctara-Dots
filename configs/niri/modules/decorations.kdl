@@ -9,7 +9,7 @@
 
 // blur is introduced in Niri version 26.04 make sure you have that
 blur {
-  passes 2       // more passes = stronger blur
+  passes 2      // more passes = stronger blur
   offset 3.0     // sample distance per pass 
   noise 0.03     // grain overlay 
   saturation 1.0 // color saturation boost 

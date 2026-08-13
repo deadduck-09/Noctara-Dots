@@ -48,7 +48,7 @@ include "./modules/window-rules.kdl"  // Windows behavior
 // If you are not using "noctalia-shell" consider making it modular too.
 
 layout {
-  gaps 7 // Set gaps around windows in logical pixels.
+  gaps 6 // Set gaps around windows in logical pixels.
   center-focused-column "never"
   always-center-single-column
   preset-column-widths {
@@ -62,8 +62,6 @@ layout {
   focus-ring {
     off // Comment this line to enable focus ring.
     width 4
-    active-color "#7fc8ff"
-    inactive-color "#505050"
   }
 
   border {
@@ -71,9 +69,6 @@ layout {
     // if borders are enabled, consider disabling the focus ring.
     //off 
     width 2
-    active-color "#ffc87f"
-    inactive-color "#505050"
-    urgent-color "#9b0000"  //windows that require attention.
   }
 
   shadow {
@@ -81,7 +76,6 @@ layout {
     softness 30
     spread 5
     offset x=0 y=5
-    color "#0007"
   }
 
   // Struts shrink the area occupied by windows, similarly to layer-shell panels.
@@ -96,3 +90,5 @@ layout {
 
 include "./noctalia.kdl"
 
+
+include "bin/focus.kdl"

@@ -17,10 +17,12 @@ binds {
   Super+Period { spawn-sh "noctalia msg panel-toggle launcher \"/emo \""; }
   Super+V { spawn-sh "noctalia msg panel-toggle clipboard"; }
   Super+D { spawn-sh "noctalia msg panel-toggle control-center"; }
-  Alt+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
   Super+N { spawn-sh "noctalia msg panel-toggle control-center notifications"; }
   Super+Escape { spawn-sh "noctalia msg panel-toggle session"; }
   Super+Alt+I { spawn-sh "noctalia msg settings-toggle"; }
+  Alt+Tab { spawn-sh "noctalia msg window-switcher"; }
+  Alt+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
+
   // Apps // 
   Super+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
   Super+B hotkey-overlay-title="Open a Browser: Helium" { spawn "helium-browser"; }
@@ -29,23 +31,8 @@ binds {
   Super+O hotkey-overlay-title="Open a Notes App" { spawn "obsidian"; }
   Super+C hotkey-overlay-title="Open a Code Editor" { spawn "vscodium"; }
 
-  // Volume Keys // 
-  // For PipeWire & WirePlumber.
-  // allow-when-locked=true property makes them work even when the screen is locked.
-  XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+ -l 1.0"; }
-  XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-"; }
-  XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
-  XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; } 
-
-  // Media Keys // 
-  XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
-  XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
-  XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
-  XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; } 
-
-  // Brightness // 
-  XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
-  XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+  // Focus Mode
+  Super+Alt+F {spawn "~/.config/niri/bin/toggle-focus.sh"; }
 
   // Closing Tabs & Overview
   Super+Q repeat=false { close-window; }
@@ -177,6 +164,24 @@ binds {
 
   Super+Shift+Minus { set-window-height "-10%"; }
   Super+Shift+Equal { set-window-height "+10%"; }
+
+  // Volume Keys // 
+  // For PipeWire & WirePlumber.
+  // allow-when-locked=true property makes them work even when the screen is locked.
+  XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+ -l 1.0"; }
+  XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-"; }
+  XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
+  XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; } 
+
+  // Media Keys // 
+  XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+  XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
+  XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
+  XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; } 
+
+  // Brightness // 
+  XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
+  XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
 
   // Quitting & Power-Off 
   // Super+Shift+E { quit; } 
