@@ -279,7 +279,7 @@ For my complete wallpaper collection, visit:
 
 # 📂 Repository Structure
 
-````text
+```text
 .
 ├── assets
 │   ├── desktop-cc.png
@@ -313,7 +313,8 @@ For my complete wallpaper collection, visit:
 ├── Pictures
 │   ├── Pfps-and-logos
 │   └── Wallpapers
-└── README.md```
+└── README.md
+```
 
 ---
 
@@ -349,4 +350,3 @@ Every contribution, issue report, suggestion, or star helps make the project eve
 ---
 
 > _"My desktop may look minimal, but the hours spent configuring it definitely weren't."_ 🌙
-````
