@@ -43,6 +43,9 @@
 
 Instead of spending days manually tweaking individual configuration files, themes, animations, and keybindings, Noctara-dots delivers an out-of-the-box desktop experience that looks great and stays easy to customize.
 
+> 📖 **Looking for full setup guides?**
+> Check out the official [Noctara Documentation Site](https://deadduck-09.github.io/Noctara-Docs/) for full installation, customization, and troubleshooting steps.
+
 ---
 
 ## ❓ Why Noctara-dots?
@@ -140,7 +143,7 @@ For complete, detailed instructions on tweaking, extending, and troubleshooting 
 > 💡 **Detailed Guides:**
 >
 > - [📖 **Full Wiki & User Guide**](https://deadduck-09.github.io/Noctara-Docs/) _(Overview of all detailed docs)_
-> - [⚙️ **Window Manager Settingk**](https://deadduck-09.github.io/Noctara-Docs/configuration/window-managers/niri.html) _(Changing keybinds, env variables and monitor settings)_
+> - [⚙️ **Window Manager Settings**](https://deadduck-09.github.io/Noctara-Docs/configuration/window-managers/niri.html) _(Changing keybinds, env variables and monitor settings)_
 > - [🪟 **Customization**](https://deadduck-09.github.io/Noctara-Docs/customization/wallpapers.html) _(Changing Icons and wallpapers)_
 
 ---
@@ -276,9 +279,15 @@ For my complete wallpaper collection, visit:
 
 # 📂 Repository Structure
 
-```text
+````text
 .
 ├── assets
+│   ├── desktop-cc.png
+│   ├── desktop.png
+│   ├── niri-overview.png
+│   ├── nvim-setup.png
+│   ├── resources.png
+│   └── terminal-setup.png
 ├── configs
 │   ├── btop
 │   ├── cava
@@ -286,6 +295,7 @@ For my complete wallpaper collection, visit:
 │   ├── fish
 │   ├── hypr
 │   ├── kitty
+│   ├── mango
 │   ├── mpd
 │   ├── mpv
 │   ├── niri
@@ -303,8 +313,7 @@ For my complete wallpaper collection, visit:
 ├── Pictures
 │   ├── Pfps-and-logos
 │   └── Wallpapers
-└── README.md
-```
+└── README.md```
 
 ---
 
@@ -340,3 +349,4 @@ Every contribution, issue report, suggestion, or star helps make the project eve
 ---
 
 > _"My desktop may look minimal, but the hours spent configuring it definitely weren't."_ 🌙
+````
