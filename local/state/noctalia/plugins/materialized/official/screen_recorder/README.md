@@ -9,18 +9,16 @@ Control Center.
 | Field | Value |
 | --- | --- |
 | ID | `noctalia/screen_recorder` |
-| Entries | Service: `service`; bar widget: `recorder`; shortcut: `toggle` |
+| Entries | Service: `service`; bar widget: `recorder`; shortcut: `toggle`; layer: `overlay` |
 
 ## Requirements
 
 Install `gpu-screen-recorder` on `PATH`, or install the Flatpak app
 `com.dec05eba.gpu_screen_recorder`. Portal capture also requires
-`xdg-desktop-portal` and one supported backend, such as
-`xdg-desktop-portal-wlr`, `xdg-desktop-portal-hyprland`,
-`xdg-desktop-portal-gnome`, `xdg-desktop-portal-kde`, or
-`niri-screenshare`.
+`xdg-desktop-portal` with any backend that provides the ScreenCast interface.
+Region capture requires `slurp`.
 
-- **[gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/)** — Hardware-accelerated screen recording
+- **[gpu-screen-recorder](https://git.dec05eba.com/gpu-screen-recorder/about/)** - Hardware-accelerated screen recording
 
 Recordings are saved to the configured output directory. When the directory is
 empty, the plugin uses `~/Videos/Recordings`.
@@ -35,7 +33,7 @@ Widget controls:
 
 | Action | Behavior |
 | --- | --- |
-| Left click | Start or stop recording. |
+| Left click | Stop an active or pending recording/replay buffer, or start recording when idle. |
 | Right click | Start the replay buffer, stop a pending replay buffer, or save an active replay. |
 | Middle click | Save an active replay buffer. |
 
@@ -43,20 +41,32 @@ Shortcut controls:
 
 | Action | Behavior |
 | --- | --- |
-| Left click | Toggle recording. |
+| Left click | Stop an active or pending recording/replay buffer, or start recording when idle. |
 | Right click | Toggle the replay buffer. |
 
 Replay controls are available only when `replay_enabled` is true.
+
+Disabling or reloading the plugin, or exiting Noctalia, stops an active capture.
+
+When `video_source` is `region`, starting a capture or replay first opens a
+`slurp` picker: drawing an area records it and cancelling returns to idle.
+
+While a region capture runs, a dimmed cutout overlay with a thin accent ring
+shows the recorded bounds. The overlay ignores clicks, and nothing is drawn
+inside the region, so the recording is unaffected. Turn it off with the
+`region_indicator` setting.
 
 ## Settings
 
 | Setting | Type | Default | Description |
 | --- | --- | --- | --- |
-| `video_source` | `select` | `portal` | Capture `focused` or `portal`. |
+| `video_source` | `select` | `portal` | Capture `focused`, `portal` or `region`. |
+| `region_indicator` | `bool` | `true` | Dims everything outside the picked region while a region recording or replay buffer runs. |
 | `directory` | `folder` | `~/Videos/Recordings` | Output folder, falling back to `~/Videos/Recordings`. |
 | `filename_pattern` | `string` | `recording_%Y%m%d_%H%M%S` | Date-format filename pattern without extension. |
 | `frame_rate` | `int` | `60` | Capture frame rate from 1 to 240. |
 | `video_codec` | `select` | `h264` | Video codec: `h264`, `hevc`, `av1`, `vp8`, or `vp9`. |
+| `video_encoder` | `select` | `gpu` | Video encoder: `gpu` (hardware) or `cpu` (software, always H.264). |
 | `video_qp` | `int` | `25` | Constant quality level from 0–51; lower values produce higher quality and larger files. |
 | `resolution` | `string` | `original` | `original` or a size like `1920x1080`. |
 | `audio_source` | `select` | `default_output` | Audio source: output, input, both, or none. |
@@ -66,6 +76,11 @@ Replay controls are available only when `replay_enabled` is true.
 | `color_range` | `select` | `limited` | Uses limited or full color range. |
 | `copy_to_clipboard` | `bool` | `false` | Copies the saved recording URI to the clipboard. |
 | `hide_inactive` | `bool` | `false` | Hides the bar widget while idle. |
+| `glyph_unavailable` | `glyph` | `video-off` | Bar glyph when gpu-screen-recorder is not installed. |
+| `glyph_idle` | `glyph` | `video` | Bar glyph when idle. |
+| `glyph_pending` | `glyph` | `video` | Bar glyph while a recording or replay buffer is starting. |
+| `glyph_recording` | `glyph` | `video` | Bar glyph while recording. |
+| `glyph_replaying` | `glyph` | `repeat` | Bar glyph while the replay buffer is running. |
 | `replay_enabled` | `bool` | `false` | Enables replay-buffer controls. |
 | `replay_duration` | `int` | `30` | Replay buffer duration in seconds. |
 | `replay_storage` | `select` | `ram` | Stores replay data in RAM or on disk. |
@@ -89,23 +104,26 @@ noctalia msg plugin noctalia/screen_recorder:service all replay-save
 ### Capture source override
 
 `start` and `replay-start` accept an optional payload that overrides the
-`video_source` setting for that capture: `focused` or `portal`. Any
+`video_source` setting for that capture: `focused`, `portal` or `region`. Any
 other value is ignored and the configured source is used.
 
 ```sh
 noctalia msg plugin noctalia/screen_recorder:service all start focused
 noctalia msg plugin noctalia/screen_recorder:service all start portal
+noctalia msg plugin noctalia/screen_recorder:service all start region
 ```
 
 Here `all` is the IPC target (which instance receives the event) and the trailing
-word is the capture source — two separate fields.
+word is the capture source - two separate fields.
 
 ## Debugging
 
 The service logs its decisions (availability, portal checks, the resolved
 gpu-screen-recorder command, and every state transition) through the Noctalia log
-with a `screen_recorder:` prefix — watch it in the terminal running Noctalia or via
+with a `screen_recorder:` prefix - watch it in the terminal running Noctalia or via
 `journalctl`. gpu-screen-recorder's own stdout/stderr is captured to
 `${XDG_STATE_HOME:-~/.local/state}/noctalia/screen_recorder/gpu-screen-recorder.log`
 (truncated per run); when a recording fails to start or ends early, the tail of that
 file is echoed into the Noctalia log so the underlying reason is visible.
+Cancelling the portal target selection dialog exits silently without any error
+notification popup, the cancellation is only written in the Noctalia log.

@@ -1,5 +1,5 @@
 --!nonstrict
--- Countdown timer desktop widget — a [[desktop_widget]] client of the shared
+-- Countdown timer desktop widget - a [[desktop_widget]] client of the shared
 -- timer service.
 --
 -- Like the bar and panel entries, this widget owns no timer logic: it reflects
@@ -30,7 +30,7 @@ local function timeColor()
   elseif remaining > 0 then
     return color
   end
-  return "outline"
+  return "outline_variant"
 end
 
 local function render()

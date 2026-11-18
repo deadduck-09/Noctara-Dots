@@ -5,6 +5,8 @@ set -euo pipefail
 NIRI_BIN="${HOME}/.config/niri/bin"
 FOCUS_RULES="${NIRI_BIN}/focus-rules.kdl"
 ACTIVE_FOCUS="${NIRI_BIN}/focus.kdl"
+APPLY_HOSTS="${NIRI_BIN}/apply-hosts.sh"
+
 STATE_FILE="${XDG_RUNTIME_DIR:-/tmp}/niri-focus-mode"
 PREV_WALLPAPER_FILE="${XDG_RUNTIME_DIR:-/tmp}/niri-prev-wallpaper"
 PREV_WALLPAPER_AUTOMATION_FILE="${XDG_RUNTIME_DIR:-/tmp}/niri-prev-wallpaper-automation"
@@ -86,6 +88,11 @@ if [[ "${1:-}" == "--reset" ]]; then
 
     rm -f "$STATE_FILE"
 
+    # --- Restore /etc/hosts ---
+    if [[ -x "$APPLY_HOSTS" ]]; then
+        sudo "$APPLY_HOSTS" disable || true
+    fi
+
     # Restore Noctalia animations
     set_noctalia_animations "true"
 
@@ -148,6 +155,11 @@ if [[ -f "$STATE_FILE" ]]; then
 
     rm -f "$STATE_FILE"
 
+    # --- Restore /etc/hosts ---
+    if [[ -x "$APPLY_HOSTS" ]]; then
+        sudo "$APPLY_HOSTS" disable || true
+    fi
+
     # Re-enable Noctalia animations
     set_noctalia_animations "true"
 
@@ -193,6 +205,11 @@ else
 
     cp "$FOCUS_RULES" "$ACTIVE_FOCUS"
     echo "background_opacity 1.0" > "$KITTY_FOCUS"
+
+    # --- Apply /etc/hosts Blocklist ---
+    if [[ -x "$APPLY_HOSTS" ]]; then
+        sudo "$APPLY_HOSTS" enable || true
+    fi
 
     # Disable Noctalia animations
     set_noctalia_animations "false"

@@ -52,6 +52,13 @@
             "keyColor": "33"
         },
 
+        {
+            "type": "command",
+            "key": "   age",
+            "keyColor": "35",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+
         "break",
 
         // -- Colors Block --

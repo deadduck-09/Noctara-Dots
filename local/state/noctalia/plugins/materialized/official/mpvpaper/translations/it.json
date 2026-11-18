@@ -1,0 +1,64 @@
+{
+  "all_outputs": "Tutti gli Outputs",
+  "empty": "Nessun video trovato nel percorso specificato",
+  "not_installed": "mpvpaper non è installato",
+  "output": "Output",
+  "pause": "Pausa",
+  "resume": "Riprendi",
+  "settings": {
+    "allowed_cpus": {
+      "label": "CPUs permesse"
+    },
+    "auto_pause": {
+      "description": "Metti in pausa il playblack quando una finestra copre lo sfondo (sperimentale: potrebbe non funzionare su tutti i compositor)",
+      "label": "Pausa Quando Coperto",
+      "options": {
+        "full": "Schermo intero",
+        "max": "Massimizzato",
+        "off": "Off"
+      }
+    },
+    "cpu_quota": {
+      "label": "Quota CPU"
+    },
+    "cpu_weight": {
+      "label": "Peso CPU"
+    },
+    "extract_last_frame": {
+      "description": "Estrai automaticamente un frame dal video da usare come sfondo statico quando il playback è in pausa",
+      "label": "Frame di Fallback Statico"
+    },
+    "glyph": {
+      "label": "Glifo"
+    },
+    "hardware_decode": {
+      "description": "Usa decodifica video GPU (mpv hwdec=auto)",
+      "label": "Decodifica Hardware"
+    },
+    "memory_max": {
+      "label": "Memoria massima"
+    },
+    "mpv_options": {
+      "description": "Opzioni aggiuntive di mpv separate da spazio, es. panscan=1.0 video-zoom=0.1",
+      "label": "Opzioni mpv extra"
+    },
+    "mute": {
+      "label": "Muta Audio"
+    },
+    "nice": {
+      "label": "Valore Priorità"
+    },
+    "run_as_systemd": {
+      "description": "Esegui lo sfondo in uno scope transient di systemd per imporre limiti rigorosi alle risorse.",
+      "label": "Esegui come servizio systemd"
+    },
+    "video_directory": {
+      "description": "Cartella scansionata per sfondo video;  usa ~/Videos quando vuota",
+      "label": "Percorso Video"
+    }
+  },
+  "slideshow": "Diapositive",
+  "slideshow_off": "Off",
+  "stop": "Stop",
+  "title": "Sfondo Video"
+}

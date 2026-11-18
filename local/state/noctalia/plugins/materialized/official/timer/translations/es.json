@@ -1,0 +1,28 @@
+{
+  "settings": {
+    "color": {
+      "description": "Color de acento para el tiempo y la barra de progreso",
+      "label": "Color"
+    },
+    "duration": {
+      "description": "Duración de la cuenta atrás en segundos",
+      "label": "Duración (segundos)"
+    },
+    "show_idle": {
+      "description": "Mostrar u ocultar el widget cuando el temporizador se detiene en cero",
+      "label": "Mostrar la cifra en reposo en la barra horizontal"
+    },
+    "show_progress": {
+      "label": "Mostrar barra de progreso"
+    }
+  },
+  "ui": {
+    "duration_label": "Duración del temporizador",
+    "duration_placeholder": "ej: 400 → 4:00",
+    "notify_body": "¡Se acabó el tiempo!",
+    "notify_title": "Temporizador",
+    "pause": "Pausar",
+    "reset": "Reiniciar",
+    "start": "Iniciar"
+  }
+}

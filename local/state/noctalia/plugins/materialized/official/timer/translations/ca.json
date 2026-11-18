@@ -1,0 +1,27 @@
+{
+  "settings": {
+    "color": {
+      "description": "Color d'accent per al temps i la barra de progrés",
+      "label": "Color"
+    },
+    "duration": {
+      "description": "Durada de la compte enrere en segons",
+      "label": "Durada (segons)"
+    },
+    "show_idle": {
+      "label": "Mostra el recompte en repòs a la barra horitzontal"
+    },
+    "show_progress": {
+      "label": "Mostra la barra de progrés"
+    }
+  },
+  "ui": {
+    "duration_label": "Durada del temporitzador",
+    "duration_placeholder": "p. ex. 400 → 4:00",
+    "notify_body": "S'ha acabat el temps!",
+    "notify_title": "Temporitzador",
+    "pause": "Pausa",
+    "reset": "Reinicia",
+    "start": "Inicia"
+  }
+}

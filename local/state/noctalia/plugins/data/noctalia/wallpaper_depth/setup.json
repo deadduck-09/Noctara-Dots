@@ -1,0 +1,1 @@
+{"modelRevision":"4472b7362082ad9968fee890ca0f1e5aca36b93d","modelSha256":"afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c","modelSize":99060839,"packages":["numpy==2.4.2","onnxruntime==1.28.0","Pillow==12.3.0"],"ready":true}

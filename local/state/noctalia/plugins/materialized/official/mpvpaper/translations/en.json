@@ -1,0 +1,64 @@
+{
+  "all_outputs": "All Outputs",
+  "empty": "No videos found in the configured directory",
+  "not_installed": "mpvpaper is not installed",
+  "output": "Output",
+  "pause": "Pause",
+  "resume": "Resume",
+  "settings": {
+    "allowed_cpus": {
+      "label": "Allowed CPUs"
+    },
+    "auto_pause": {
+      "description": "Pause playback while a window covers the wallpaper (experimental: may not work on all compositors)",
+      "label": "Pause When Covered",
+      "options": {
+        "full": "Fullscreen",
+        "max": "Maximized",
+        "off": "Off"
+      }
+    },
+    "cpu_quota": {
+      "label": "CPU Quota"
+    },
+    "cpu_weight": {
+      "label": "CPU Weight"
+    },
+    "extract_last_frame": {
+      "description": "Automatically extract a frame from the video to use as the static wallpaper when playback is stopped",
+      "label": "Static Fallback Frame"
+    },
+    "glyph": {
+      "label": "Glyph"
+    },
+    "hardware_decode": {
+      "description": "Use GPU video decoding (mpv hwdec=auto)",
+      "label": "Hardware Decoding"
+    },
+    "memory_max": {
+      "label": "Max Memory"
+    },
+    "mpv_options": {
+      "description": "Additional space-separated mpv options, e.g. panscan=1.0 video-zoom=0.1",
+      "label": "Extra mpv Options"
+    },
+    "mute": {
+      "label": "Mute Audio"
+    },
+    "nice": {
+      "label": "Nice Value"
+    },
+    "run_as_systemd": {
+      "description": "Run the wallpaper in a systemd transient scope to enforce strict resource limits",
+      "label": "Run as systemd Service"
+    },
+    "video_directory": {
+      "description": "Folder scanned for wallpaper videos; defaults to ~/Videos when empty",
+      "label": "Video Directory"
+    }
+  },
+  "slideshow": "Slideshow",
+  "slideshow_off": "Off",
+  "stop": "Stop",
+  "title": "Video Wallpaper"
+}

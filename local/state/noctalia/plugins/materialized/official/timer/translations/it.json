@@ -1,0 +1,36 @@
+{
+  "settings": {
+    "alarm": {
+      "description": "Mantieni l'allarme fino a quando il timer non è disattivato, ignorando la durata dell'allarme",
+      "label": "Allarme persistente"
+    },
+    "alarm_duration": {
+      "description": "Durata in secondi dell'allarme dopo che il timer scade. 0 lo silenzia.",
+      "label": "Durata allarme (secondi)"
+    },
+    "color": {
+      "description": "Colore di accento per l'orario e la barra di avanzamento",
+      "label": "Colore"
+    },
+    "duration": {
+      "description": "Durata Conto alla Rovescia in secondi",
+      "label": "Durata (secondi)"
+    },
+    "show_idle": {
+      "description": "Mostra o nascondi il widget quando il timer si arresta a zero.",
+      "label": "Mostra il timer sulla barra orizzontale quando inattivo"
+    },
+    "show_progress": {
+      "label": "Mostra Barra di Progresso"
+    }
+  },
+  "ui": {
+    "duration_label": "Durata del Timer",
+    "duration_placeholder": "es. 400 → 4:00",
+    "notify_body": "Tempo scaduto!",
+    "notify_title": "Timer",
+    "pause": "Pausa",
+    "reset": "Reset",
+    "start": "Inizia"
+  }
+}

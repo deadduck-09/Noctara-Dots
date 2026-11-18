@@ -1,5 +1,5 @@
 --!nonstrict
--- Timer panel — the [[panel]] entry for duration input and controls.
+-- Timer panel - the [[panel]] entry for duration input and controls.
 --
 -- The panel provides an interactive surface to set the countdown
 -- duration via numeric input (e.g. 300 → 3:00, 10300 → 1:03:00),
@@ -60,13 +60,13 @@ local function render()
 
   panel.render(ui.column({ gap = 12, padding = 16 }, {
     ui.label({ text = noctalia.tr("ui.duration_label"), fontSize = 16, fontWeight = "bold", color = "primary" }),
-    ui.column({ gap = 8, padding = 8, fill = "surface_variant/0.4", radius = 8 }, {
+    ui.column({ gap = 8, padding = 8, fill = "surface_container/0.4", radius = 8 }, {
       ui.row({ justify = "center" }, {
         ui.label({
           text = remainingText,
           fontSize = 36,
           fontWeight = "bold",
-          color = remaining > 0 and "primary" or "outline",
+          color = remaining > 0 and "primary" or "outline_variant",
         }),
       }),
       ui.input({
@@ -113,7 +113,7 @@ local function resetInputDigits()
   if remaining == 0 then
     inputDigits = ""
   else
-    inputDigits = tostring(remaining)
+    inputDigits = formattedTime
   end
   updateInputDigits()
 end
@@ -121,6 +121,7 @@ end
 function onOpen(_context)
   STATE = noctalia.state.get("timer.state")
   remaining = noctalia.state.get("timer.remaining")
+  formattedTime = noctalia.state.get("timer.formattedTime") or "0"
   resetInputDigits()
   render()
 end

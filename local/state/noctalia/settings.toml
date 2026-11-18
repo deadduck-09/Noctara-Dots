@@ -1,34 +1,57 @@
-config_version = 2
+config_version = 20
 
 [accessibility]
 ui_scale = 0.80000000447034836
 
 [audio]
+colorize_icons = true
 enable_sounds = true
-sound_volume = 0.99999997764825821
 
 [bar]
 order = [ "default" ]
 
     [bar.default]
+    capsule_thickness = 0.92999998293817043
     center = [ "cat", "clock" ]
-    end = [ "media", "bar", "notifications", "battery", "session" ]
-    margin_ends = 215
-    padding = 15
-    radius = 80
+    color = "primary"
+    concave_edge_corners = false
+    contact_shadow = true
+    end = [ "audio_visualizer", "media", "group:g1" ]
+    font_family = "Thunderman"
+    icon_color = "#FFFFFF"
+    margin_ends = 0
+    padding = 13
+    position = "left"
+    radius = 0
+    radius_bottom_left = 0
+    radius_bottom_right = 0
+    radius_top_right = 0
     scale = 0.95000000670552254
-    start = [ "control-center", "workspaces", "sysmon" ]
-    thickness = 33
-    widget_spacing = 10
+    start = [ "dns-switcher", "control-center", "workspaces", "sysmon" ]
+    widget_spacing = 11
+
+        [[bar.default.capsule_group]]
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "bar_2", "notifications", "battery", "session" ]
+        opacity = 0.0
+        padding = 10.0
 
 [battery]
 warning_threshold = 15
 
-[calendar]
-enabled = true
+    [battery.device."/org/freedesktop/UPower/devices/headphones_dev_C8_2B_6B_5B_DC_63"]
+    warning_threshold = 15
+
+[calendar.account.personal_google]
+name = "Gigi"
+type = "google"
 
 [control_center]
 hidden_tabs = [ "monitor" ]
+show_session_button = false
+show_shortcut_labels = false
 sidebar_section = "none"
 
     [control_center.calendar]
@@ -44,11 +67,14 @@ sidebar_section = "none"
     type = "caffeine"
 
     [[control_center.shortcuts]]
+    type = "noctalia/screen_recorder:toggle"
+
+    [[control_center.shortcuts]]
     type = "dark_mode"
 
 [desktop_widgets]
 schema_version = 2
-widget_order = [ "desktop-widget-0000000000000001" ]
+widget_order = [ "desktop-widget-0000000000000002", "desktop-widget-0000000000000001", "desktop-widget-0000000000000003" ]
 
     [desktop_widgets.grid]
     cell_size = 16
@@ -58,9 +84,11 @@ widget_order = [ "desktop-widget-0000000000000001" ]
     [desktop_widgets.widget.desktop-widget-0000000000000001]
     box_height = 368.0
     box_width = 1344.0
-    cx = 683.0
-    cy = 592.0
+    cx = 699.0
+    cy = 584.0
     output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = -0.0
     type = "audio_visualizer"
 
@@ -71,10 +99,54 @@ widget_order = [ "desktop-widget-0000000000000001" ]
         color_1 = "primary"
         color_2 = "primary"
         mirrored = true
+        show_wave = false
         show_when_idle = false
 
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 272.0
+    box_width = 512.0
+    cx = 1099.0
+    cy = 136.0
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "clock"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background = false
+        center_text = true
+        clock_style = "digital"
+        color = "secondary"
+        font_family = "Thunderman"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000003]
+    box_height = 64.0
+    box_width = 352.0
+    cx = 1099.0
+    cy = 240.0
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "weather"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
+        background = false
+        font_family = "Thunderman"
+
 [dock]
+colorize_icons = true
+cross_axis_padding = 14
+icon_size = 34
+item_spacing = 10
+launcher_position = "end"
+main_axis_padding = 8
 pinned = [ "kitty" ]
+position = "right"
+reserve_space = false
+show_dots = true
+smart_auto_hide = true
 
 [idle]
 behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
@@ -98,77 +170,122 @@ pre_action_fade_seconds = 5
 [location]
 auto_locate = true
 
+[lockscreen]
+allow_empty_password = true
+edge_smoothness = 0.99999997764825821
+tint_intensity = 0.63999998569488525
+transition = [ "zoom" ]
+transition_duration = 600
+
 [lockscreen_widgets]
 enabled = true
 schema_version = 2
 widget_order = [
-    "lockscreen-widget-0000000000000005",
+    "lockscreen-login-box@WL-1",
+    "lockscreen-login-box@WAYLAND-1",
     "lockscreen-login-box@eDP-1",
-    "lockscreen-widget-0000000000000001",
-    "lockscreen-widget-0000000000000003",
-    "lockscreen-widget-0000000000000004"
+    "lockscreen-widget-0000000000000004",
+    "lockscreen-widget-0000000000000006",
+    "lockscreen-widget-0000000000000009"
 ]
 
     [lockscreen_widgets.grid]
-    cell_size = 64
+    cell_size = 16
     major_interval = 4
     visible = true
 
+    [lockscreen_widgets.widget."lockscreen-login-box@WAYLAND-1"]
+    box_height = 196.0
+    box_width = 720.0
+    cx = 167.5
+    cy = 241.0
+    output = "WAYLAND-1"
+    placement_height = 0.0
+    placement_width = 0.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WAYLAND-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
+    box_height = 196.0
+    box_width = 720.0
+    cx = 658.0
+    cy = 570.0
+    output = "WL-1"
+    placement_height = 752.0
+    placement_width = 1316.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
-    box_height = 120.0
-    box_width = 384.0
-    cx = 699.0
-    cy = 612.0
+    box_height = 70.0
+    box_width = 400.0
+    cx = 683.0
+    cy = 685.0
     output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
-        background_color = "secondary"
+        background_color = "primary"
         background_opacity = 0.0
-        background_radius = 19.0
+        background_radius = 0.0
         center_password_text = true
-        input_opacity = 1.0
-        input_radius = 6.0
+        input_opacity = 0.0
+        input_radius = 0.0
+        layout = "compact"
         show_caps_lock = true
-        show_keyboard_layout = true
-        show_login_button = true
-        show_password_hint = false
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
-    box_height = 144.0
-    box_width = 432.0
-    cx = 683.0
-    cy = 88.0
-    output = "eDP-1"
-    rotation = 0.0
-    type = "clock"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
-        background = false
-        center_text = true
-        clock_style = "digital"
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
-    box_height = 0.0
-    box_width = 0.0
-    cx = 683.0
-    cy = 320.0
-    output = "eDP-1"
-    rotation = 0.0
-    type = "sticker"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
-        background = false
-        image_path = "~/Pictures/Pfps-and-logos/icon.png"
-        opacity = 1.0
+        show_keyboard_layout = false
+        show_login_button = false
+        show_media = true
+        show_password_reveal = false
+        show_session_buttons = true
+        show_unlock_hint = false
+        show_weather = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
-    box_height = 48.0
-    box_width = 128.0
+    box_height = 32.0
+    box_width = 368.0
     cx = 683.0
-    cy = 440.0
+    cy = 80.0
     output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "label"
 
@@ -176,31 +293,51 @@ widget_order = [
         background = false
         color = "tertiary"
         description = ""
-        font_family = "JetBrainsMono NF ExtraBold"
-        title = "WELCOME!!"
+        font_family = "Thunderman"
+        title = "L  O  C  K  E  D"
 
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
-    box_height = 448.0
-    box_width = 672.0
-    cx = 683.0
-    cy = 320.0
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000006]
+    box_height = 64.0
+    box_width = 64.0
+    cx = 459.0
+    cy = 682.0
     output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
-    type = "fancy_audio_visualizer"
+    type = "yocraft/battery-widget:widget"
 
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000005.settings]
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000006.settings]
         background = false
-        bloom_intensity = 0.70000000000000007
-        inner_diameter = 0.65000000000000002
-        rotation_speed = 0.20000000000000001
-        sensitivity = 1.3
-        visualization_mode = "wave"
-        wave_thickness = 0.69999999999999996
+        color = "primary"
+        hide_full = true
+        hide_plugged = true
+        layout = "vertical"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000009]
+    box_height = 576.0
+    box_width = 448.0
+    cx = 683.0
+    cy = 384.0
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000009.settings]
+        background = false
+        center_text = true
+        clock_style = "digital"
+        color = "primary"
+        font_family = "Thunderman"
+        format = "{:%H   %n   %M}"
 
 [nightlight]
 enabled = true
 
 [notification]
+colorize_icons = true
 layer = "overlay"
 
 [osd]
@@ -214,43 +351,106 @@ position_vertical = "top_right"
 [plugin_settings."h465855hgg/lyrics"]
 player_allowlist = [ "Spotify" ]
 
+[plugin_settings."noctalia/mpvpaper"]
+picker_placement = "floating"
+picker_position = "bottom_center"
+video_directory = "/home/gigi/Pictures/Wallpapers"
+
+[plugin_settings."noctalia/wallpaper_depth"]
+threshold = 32
+
+[plugin_settings."yngwe/wallpaperCarousel"]
+borderWidth = 0
+carouselMode = "infinite"
+cornerRadius = 9
+expandMultiplier = 190
+expandSelected = true
+selectedScale = 105
+wallpaperDirectory = "/home/gigi/Pictures/Wallpapers"
+
 [plugins]
-enabled = [ "dotnetrob/cat", "noctalia/timer", "noctalia/screen_recorder" ]
+enabled = [
+    "noctalia/timer",
+    "noctalia/screen_recorder",
+    "dotnetrob/cat",
+    "yocraft/battery-widget",
+    "noctalia/mpvpaper",
+    "yugaaank/better-clock",
+    "nightwatch75/dns-switcher"
+]
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/official-plugins"
+    name = "official"
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/community-plugins"
+    name = "community"
 
 [shell]
-avatar_path = "~/Pictures/Pfps-and-logos/icon.png"
+app_icon_color = "#FFFFFF"
+avatar_path = "/home/gigi/Pictures/Pfps-and-logos/icon.png"
+corner_radius_scale = 0.0
 font_family = "JetBrains Mono"
+niri_overview_close_on_launch_enabled = true
 niri_overview_type_to_launch_enabled = true
 password_style = "random"
 polkit_agent = true
+polkit_colorize_icons = true
+screen_time_colorize_icons = true
 screen_time_enabled = true
 show_location = false
 ui_scale = 0.80000000447034836
 
+    [shell.animation]
+    enabled = true
+
     [shell.launcher]
     categories = false
+    category_icons_only = true
+    colorize_icons = true
+    default_view = "pinned"
+    layout = "simple"
+    pinned = [
+        "helium",
+        "yazi",
+        "chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default",
+        "nvim",
+        "chrome-oemhpohpemccegfaemiccolmocijfngb-Default",
+        "rmpc",
+        "spotify",
+        "thunar"
+    ]
+    show_session_button = false
+    show_settings_button = false
+    width = 610
 
         [shell.launcher.providers.calculator]
         prefix = "="
 
     [shell.panel]
-    clipboard_placement = "attached"
-    clipboard_position = "auto"
-    launcher_placement = "attached"
+    clipboard_position = "top_center"
+    control_center_position = "top_center"
+    launcher_position = "top_center"
     open_near_click_clipboard = true
     open_near_click_control_center = true
     open_near_click_launcher = true
     open_near_click_wallpaper = true
-    polkit_placement = "attached"
-    polkit_position = "auto"
-    transparency_mode = "soft"
+    polkit_position = "top_center"
+    session_placement = "floating"
+    session_position = "top_center"
+    wallpaper_placement = "floating"
+    wallpaper_position = "bottom_center"
 
     [shell.screen_corners]
-    enabled = true
+    size = 1
 
     [shell.session]
     grid = true
     grid_columns = 4
+    show_shortcuts = false
 
         [[shell.session.actions]]
         action = "lock"
@@ -267,59 +467,94 @@ ui_scale = 0.80000000447034836
         variant = "default"
 
         [[shell.session.actions]]
-        action = "lock_and_suspend"
-        countdown_seconds = 0.0
-        enabled = false
-        shortcut = "3"
-        variant = "default"
-
-        [[shell.session.actions]]
         action = "reboot"
         countdown_seconds = 0.0
         enabled = true
-        shortcut = "4"
+        shortcut = "3"
         variant = "default"
 
         [[shell.session.actions]]
         action = "shutdown"
         countdown_seconds = 0.0
         enabled = true
-        shortcut = "5"
+        shortcut = "4"
         variant = "destructive"
 
+        [[shell.session.actions]]
+        action = "lock_and_suspend"
+        countdown_seconds = 0.0
+        enabled = false
+        shortcut = "3"
+        variant = "default"
+
     [shell.shadow]
-    alpha = 0.87999998033046722
+    alpha = 0.99999997764825821
     direction = "center"
 
+    [shell.window_switcher]
+    colorize_icons = true
+
 [theme]
-builtin = "Noctalia"
-community_palette = "Catppuccin Lavender"
+community_palette = "Espresso Cream"
 mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "niri", "qt", "starship" ]
-    community_ids = [ "spicetify", "zen-browser", "neovim", "obsidian", "vscode", "zed", "fuzzel", "obs", "papirus-icons", "yazi" ]
+    builtin_ids = [ "btop", "cava", "foot", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "niri", "qt", "starship" ]
+    community_ids = [
+        "spicetify",
+        "spicetify-noctalia",
+        "zen-browser",
+        "blender",
+        "libreoffice",
+        "neovim",
+        "obsidian",
+        "vscode",
+        "zed",
+        "steam",
+        "fuzzel",
+        "fastfetch",
+        "obs",
+        "zathura",
+        "thunar",
+        "starship",
+        "yazi"
+    ]
 
 [wallpaper]
 directory = "~/Pictures/Wallpapers"
+fill_color = "primary"
 transition = [ "disc", "honeycomb", "stripes", "wipe", "zoom" ]
 transition_on_startup = true
 
-    [wallpaper.automation]
-    enabled = true
-
     [wallpaper.default]
-    path = "~/Pictures/Wallpapers/noctara-wall.png"
+    path = "/home/gigi/Pictures/Wallpapers/girl-in-balcony-2.png"
 
     [wallpaper.last]
-    path = "~/Pictures/Wallpapers/noctara-wall.png"
+    path = "/home/gigi/Pictures/Wallpapers/girl-in-balcony-2.png"
+
+    [wallpaper.monitor.eDP-1]
+    fill_color = "primary"
+
+    [wallpaper.monitors.WAYLAND-1]
+    path = "/home/gigi/Pictures/Wallpapers/dwarf-saber.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "~/Pictures/Wallpapers/noctara-wall.png"
+    path = "/home/gigi/Pictures/Wallpapers/girl-in-balcony-2.png"
+
+[widget.active_window]
+colorize_icons = true
+
+[widget.audio_visualizer]
+bands = 87
+width = 83
 
 [widget.bar]
+show_idle_on_horizontal = false
+type = "noctalia/timer:bar"
+
+[widget.bar_2]
 show_idle_on_horizontal = false
 type = "noctalia/timer:bar"
 
@@ -333,33 +568,58 @@ cat_color_mode = "custom"
 cat_size = 32
 type = "dotnetrob/cat:cat"
 
+[widget.cat_2]
+type = "dotnetrob/cat:cat"
+
 [widget.clock]
-format = "{:%H:%M|%a,%b%d}"
+color = "#FFFFFF"
+font_scale = 1.0900000000000001
+format = "{:%H:%M -- :%a}"
+tooltip_format = "{:%a %d %b}"
 
 [widget.control-center]
 color = "primary"
 custom_image_colorize = true
-glyph = "navigation-filled"
+enabled = false
+glyph = "hexagon-letter-g"
 icon_color = "primary"
 scale = 1.1000000000000001
+
+[widget.dns-switcher]
+enable_scroll = false
+show_label = false
+type = "nightwatch75/dns-switcher:dns-switcher"
 
 [widget.launcher]
 anchor = true
 capsule = true
 
 [widget.media]
-art_size = 42
+art_size = 31
 hide_when_no_media = true
-max_length = 149
-min_length = 198
+max_length = 178
+min_length = 59
+rotate_album_art = true
 title_scroll = "on_hover"
 
 [widget.session]
 color = "#FF000C"
+font_family = "ESPACION"
 glyph = "power"
+icon_color = "#FF000C"
 
 [widget.sysmon]
 stat = "cpu_temp"
 
+[widget.taskbar]
+colorize_icons = true
+
+[widget.tray]
+colorize_icons = true
+
 [widget.workspaces]
-display = "none"
+capsule = true
+capsule_border_width = 0.0
+capsule_opacity = 0.0
+colorize_icons = true
+style = "minimal"

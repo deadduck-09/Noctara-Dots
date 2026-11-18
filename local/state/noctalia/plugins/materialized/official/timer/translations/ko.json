@@ -1,0 +1,27 @@
+{
+  "settings": {
+    "color": {
+      "label": "색상"
+    },
+    "duration": {
+      "description": "카운트 다운 길이 초",
+      "label": "지속 시간 (초)"
+    },
+    "show_idle": {
+      "description": "타이머가 0초에 멈췄을 때 위젯 표시 또는 숨기기",
+      "label": "가로 바에서 대기 상태일 때 카운트 표시"
+    },
+    "show_progress": {
+      "label": "진행 바 표시"
+    }
+  },
+  "ui": {
+    "duration_label": "타이머 지속 시간",
+    "duration_placeholder": "예: 400 → 400",
+    "notify_body": "시간이 됐어요!",
+    "notify_title": "타이머",
+    "pause": "일시정지",
+    "reset": "초기화",
+    "start": "시작"
+  }
+}

@@ -1,0 +1,147 @@
+# mpvpaper video wallpaper. A headless [[service]] supervises one mpvpaper instance
+# per output (driven through a single long-lived helper process, so reassigning a
+# video never spawns a new stream). The [[panel]] is a per-output video picker and the
+# bar [[widget]] opens it. When a video is assigned to an output, the service asks the
+# host to drop its own wallpaper surface there (noctalia.setWallpaperEnabled) so the
+# mpvpaper surface shows through; clearing the video restores it.
+#
+# Requires the external `mpvpaper` command (which pulls in mpv). mpv is also used to
+# generate the picker thumbnails.
+
+id = "noctalia/mpvpaper"
+name = "Video Wallpaper"
+version = "1.2.2"
+plugin_api = 43
+author = "noctalia"
+license = "MIT"
+dependencies = ["mpvpaper", "mpv"]
+tags = ["wallpaper", "video"]
+icon = "movie"
+description = "Video wallpapers via mpvpaper."
+
+[[setting]]
+key = "video_directory"
+type = "folder"
+label_key = "settings.video_directory.label"
+description_key = "settings.video_directory.description"
+default = ""
+
+[[setting]]
+key = "mute"
+type = "bool"
+label_key = "settings.mute.label"
+default = true
+
+[[setting]]
+key = "hardware_decode"
+type = "bool"
+label_key = "settings.hardware_decode.label"
+description_key = "settings.hardware_decode.description"
+default = true
+
+[[setting]]
+key = "auto_pause"
+type = "select"
+label_key = "settings.auto_pause.label"
+description_key = "settings.auto_pause.description"
+default = "full"
+options = [
+  { value = "off", label_key = "settings.auto_pause.options.off" },
+  { value = "max", label_key = "settings.auto_pause.options.max" },
+  { value = "full", label_key = "settings.auto_pause.options.full" },
+]
+
+[[setting]]
+key = "mpv_options"
+type = "string"
+label_key = "settings.mpv_options.label"
+description_key = "settings.mpv_options.description"
+default = ""
+
+[[setting]]
+key = "run_as_systemd"
+type = "bool"
+label_key = "settings.run_as_systemd.label"
+description_key = "settings.run_as_systemd.description"
+default = false
+
+[[setting]]
+key = "extract_last_frame"
+type = "bool"
+label_key = "settings.extract_last_frame.label"
+description_key = "settings.extract_last_frame.description"
+default = true
+
+[[setting]]
+key = "cpu_quota"
+type = "int"
+label_key = "settings.cpu_quota.label"
+default = 0
+min = 0
+max = 1600
+step = 10
+visible_when = { key = "run_as_systemd", values = ["true"] }
+
+[[setting]]
+key = "allowed_cpus"
+type = "string"
+label_key = "settings.allowed_cpus.label"
+default = ""
+visible_when = { key = "run_as_systemd", values = ["true"] }
+
+[[setting]]
+key = "memory_max"
+type = "string"
+label_key = "settings.memory_max.label"
+default = ""
+visible_when = { key = "run_as_systemd", values = ["true"] }
+
+[[setting]]
+key = "cpu_weight"
+type = "int"
+label_key = "settings.cpu_weight.label"
+default = 0
+min = 0
+max = 10000
+step = 10
+visible_when = { key = "run_as_systemd", values = ["true"] }
+
+[[setting]]
+key = "nice"
+type = "int"
+label_key = "settings.nice.label"
+default = 0
+min = -20
+max = 19
+step = 1
+visible_when = { key = "run_as_systemd", values = ["true"] }
+
+# Headless background service: owns the mpvpaper logic and per-output assignments.
+[[service]]
+id = "service"
+entry = "mpvpaper_service.luau"
+
+# Per-output video picker.
+[[panel]]
+id = "picker"
+entry = "panel.luau"
+width = 920
+height = 780
+placement = "attached"
+position = "auto"
+
+# Bar tile that opens the picker.
+[[widget]]
+id = "mpvpaper"
+entry = "widget.luau"
+
+  [[widget.setting]]
+  key = "glyph"
+  type = "glyph"
+  label_key = "settings.glyph.label"
+  default = "movie"
+
+# Control center shortcut that opens the picker.
+[[shortcut]]
+id = "shortcut"
+entry = "shortcut.luau"

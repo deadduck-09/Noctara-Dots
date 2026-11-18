@@ -13,3 +13,5 @@ spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPL
 spawn-at-startup "systemctl" "--user" "import-environment" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
 spawn-at-startup "mpd-mpris"
 spawn-at-startup "~/.config/niri/bin/toggle-focus.sh" "--reset"
+spawn-at-startup "xwayland-satellite"
+spawn-at-startup "~/.config/niri/bin/apps.sh"
